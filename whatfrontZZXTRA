@@ -1,0 +1,709 @@
+<?php
+/**
+ * @package WordPress
+ * @subpackage WhatThingsDo_Theme
+ */
+ /*
+Template Name: WhatFrontXX
+*/
+
+get_header('homeXX'); 
+?>
+
+
+
+<!-- Working Example of SLIDER 
+
+	<div id="featured" >
+		  
+		  <ul class="ui-tabs-nav">
+	        <li class="ui-tabs-nav-item ui-tabs-selected" id="nav-fragment-1"><a href="#fragment-1"><img src="<?php bloginfo('template_directory'); ?>/images2/image1-small.jpg" alt="" /><span>15+ Excellent High Speed Photographs</span></a></li>
+	        <li class="ui-tabs-nav-item" id="nav-fragment-2"><a href="#fragment-2"><img src="<?php bloginfo('template_directory'); ?>/images2/image2-small.jpg" alt="" /><span>20 Beautiful Long Exposure Photographs</span></a></li>
+	        <li class="ui-tabs-nav-item" id="nav-fragment-3"><a href="#fragment-3"><img src="<?php bloginfo('template_directory'); ?>/images2/image3-small.jpg" alt="" /><span>35 Amazing Logo Designs</span></a></li>
+	        <li class="ui-tabs-nav-item" id="nav-fragment-4"><a href="#fragment-4"><img src="<?php bloginfo('template_directory'); ?>/images2/image4-small.jpg" alt="" /><span>Create a Vintage Photograph in Photoshop</span></a></li>
+	      </ul>
+
+	    <!-- First Content -->
+	    <div id="fragment-1" class="ui-tabs-panel" style="">
+			<img src="<?php bloginfo('template_directory'); ?>/images2/image1.jpg" alt="" />
+			 <div class="info" >
+				<h2><a href="#" >15+ Excellent High Speed Photographs</a></h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt condimentum lacus. Pellentesque ut diam....<a href="#" >read more</a></p>
+			 </div>
+	    </div>
+
+	    <!-- Second Content -->
+	    <div id="fragment-2" class="ui-tabs-panel ui-tabs-hide" style="">
+			<img src="<?php bloginfo('template_directory'); ?>/images2/image2.jpg" alt="" />
+			 <div class="info" >
+				<h2><a href="#" >20 Beautiful Long Exposure Photographs</a></h2>
+				<p>Vestibulum leo quam, accumsan nec porttitor a, euismod ac tortor. Sed ipsum lorem, sagittis non egestas id, suscipit....<a href="#" >read more</a></p>
+			 </div>
+	    </div>
+
+	    <!-- Third Content -->
+	    <div id="fragment-3" class="ui-tabs-panel ui-tabs-hide" style="">
+			<img src="<?php bloginfo('template_directory'); ?>/images2/image3.jpg" alt="" />
+			 <div class="info" >
+				<h2><a href="#" >35 Amazing Logo Designs</a></h2>
+				<p>liquam erat volutpat. Proin id volutpat nisi. Nulla facilisi. Curabitur facilisis sollicitudin ornare....<a href="#" >read more</a></p>
+	         </div>
+	    </div>
+
+	    <!-- Fourth Content -->
+	    <div id="fragment-4" class="ui-tabs-panel ui-tabs-hide" style="">
+			<img src="<?php bloginfo('template_directory'); ?>/images2/image4.jpg" alt="" />
+			 <div class="info" >
+				<h2><a href="#" >Create a Vintage Photograph in Photoshop</a></h2>
+				<p>Quisque sed orci ut lacus viverra interdum ornare sed est. Donec porta, erat eu pretium luctus, leo augue sodales....<a href="#" >read more</a></p>
+	         </div>
+	    </div>
+
+		</div>
+	
+ End Working example -->	
+
+
+
+
+<div id="featured" >
+
+
+<?php
+
+      global $post;
+ 
+      $todaysposts = get_posts('numberposts=6');
+      
+      $counter = 1;
+?>
+
+
+
+
+<ul class="ui-tabs-nav">
+	<div id="featuredtitles" >  <div id=nokeyline></div>
+
+
+<?php foreach($todaysposts as $post) :
+  
+      setup_postdata($post); ?>
+ 
+
+
+ <li class="ui-tabs-nav-item ui-tabs-selected" id="nav-fragment-<?php echo $counter; ?>">
+ 
+<a href="#fragment-<?php echo $counter; ?>" onClick="location.href='<?php echo get_permalink($post->post_parent); ?>#<?php echo the_ID(); ?>'" value="this is">
+
+ 
+
+  
+<!--  <?php echo $counter; ?>  <br>  -->
+ 
+<font id="comictitlehome"><?php echo get_the_title($post); ?></font><br>
+ 
+ <?php $seriesmetas = wp_seriesmeta_write(); ?>
+ 
+ <?php  if($seriesmetas){ 
+	 echo "$seriesmetas<br>";
+	} else {
+     echo "";
+   } ?>
+   
+
+<I>by</I> <font id='titleauthorhome'><?php the_author(); ?></font><br>
+
+<?php $authoradd = get_post_meta($post->ID, 'authoradd', true); ?>
+
+
+<?php  if($authoradd){ 
+	 echo "<font id='titleparthome'>drawn by</font><br>";
+	 echo "<font id='titleauthorhome'>$authoradd</font><br>";
+	} else {
+     echo "";
+   } ?>
+
+
+
+</a></a></li>
+
+
+<?php if ( $counter == 6 ) { echo "<div id=nokeyline></div>" ; }
+else {echo "<div id=homekeyline></div>" ; }
+?>
+
+
+
+
+
+<?php $counter++; ?>
+
+<?php endforeach; ?>  
+
+</div></ul>
+
+
+
+<!-- Get images for posts --> 
+
+<?php $post;  
+      rewind_posts();
+ 	  $todaysposts = get_posts('numberposts=6');
+?>
+
+
+<?php $counter = 1; ?>  		  
+		  	
+	
+
+<?php foreach($todaysposts as $post) :
+  
+      setup_postdata($post); ?>
+ 
+
+
+<div id="fragment-<?php echo $counter; ?>" class="ui-tabs-panel" style="">
+			
+		
+<!-- Images -->
+
+<div id="bigyellowtint">
+
+<?php if (in_category('New Work')) { echo " <div id='newwork'> </div>"; } ?>
+
+<div class="bigclipout">
+    <div class="bigclipin">
+
+<a href="<?php echo get_permalink($post->post_parent); ?>#<?php echo the_ID(); ?>">
+<?php the_content('Read the rest of this entry &raquo;'); ?>
+</a>
+
+</div></div></div>
+
+
+<!-- 
+<div class="info" >
+				<h2><a href="#" ><?php echo $counter; ?></a></h2>
+				<?php echo get_the_title($post); ?><?php echo wp_seriesmeta_write(); ?> by <?php the_author(); ?>
+</div>
+ -->
+ 
+
+</div>
+
+<?php $counter++; ?>
+
+<?php endforeach; ?>  
+
+
+</div>
+
+
+   
+
+
+
+
+
+	
+	
+	
+	
+<!-- Get rid for the moment
+
+<?php
+$current_day = date_i18n('j F Y');
+$name_day = date_i18n('l');
+
+$today = getdate();
+$todaysposts = query_posts('year=' .$today["year"] .'&monthnum=' .$today["mon"] .'&day=' .$today["mday"] );
+
+?>
+
+
+
+ <?php $numbertodaysposts = 0; ?>  
+
+<?php foreach($todaysposts as $post) :
+  
+      setup_postdata($post); ?>
+ 
+<div id="<?php the_category_unlinked(''); ?>"> 
+
+
+<div id=keyline> </div> 
+
+<?php if ( $numbertodaysposts&1 )  
+		{ echo "<div class='toprightbox'>" ; }
+		
+	else { echo "<div class='topleftbox'>" ; } ?>
+
+<?php if ( $numbertodaysposts == 0 ) { echo "<font id='dayhome'>$name_day</font>" ; }
+else {echo "<font id='dayhome'>&nbsp;</font>" ; }
+?>
+
+
+
+
+
+ 
+<font id="titledatehome"><?php echo "$current_day" ?> </font>
+
+<font id="comictitlehome"><a href="<?php echo get_permalink($post->post_parent); ?>#<?php echo the_ID(); ?>">
+<?php echo get_the_title($post); ?>
+</a></font><div style="font-size:0;height:5px;"></div>  
+
+
+<font id="titleparthome"><?php echo wp_seriesmeta_write(); ?><br>
+
+by <br></font>
+<font id="titleauthorhome"><?php the_author_link(); ?></font><br>
+
+<?php $authoradd = get_post_meta($post->ID, 'authoradd', true); ?>
+
+
+<?php  if($authoradd){ 
+	 echo "<font id='titleparthome'>drawn by</font><br>";
+	 echo "<font id='titleauthorhome'>$authoradd</font><br>";
+	} else {
+     echo "";
+   } ?>
+
+<a href="<?php echo get_permalink($post->post_parent); ?>#<?php echo the_ID(); ?>">
+<img class="readbutton" src="/wp-content/themes/AAwhatthingsdo/images/BUTTONread.png">
+</a>
+
+</div>
+
+
+
+
+<div id="bigyellowtint">
+
+<?php if (in_category('New Work')) { echo " <div id='newwork'> </div>"; } ?>
+
+<div class="bigclipout">
+    <div class="bigclipin">
+
+<a href="<?php echo get_permalink($post->post_parent); ?>#<?php echo the_ID(); ?>">
+<?php the_content('Read the rest of this entry &raquo;'); ?>
+</a>
+
+</div></div></div>
+
+
+</div>
+
+ <br class="clearboth">
+ 
+<?php $numbertodaysposts++; ?>
+
+<?php endforeach; ?>  
+   
+
+<div id=keyline> </div> <br class="clearboth">
+<div id=keyline> </div>     
+    
+    
+ <font id="headlinehome">
+Recently
+</font> <br class="clearboth">   
+    
+
+
+      <?php
+  
+      global $post;
+ 
+      $the_newer = get_posts('numberposts=4&offset='.$numbertodaysposts.'');
+  	?>
+    
+     <?php $counter = 0; ?>   
+      <?php foreach($the_newer as $post) : setup_postdata($post); ?>
+      
+     
+     <?php if ( $counter == 4 ) { echo  "<br class='clearboth'><br>" ; } ?>
+     	 
+<div class="smalllowerbox" <?php post_class() ?> id="post-<?php the_ID(); ?>">
+   
+
+ 
+   <div id="smyellowtint">
+<div class="smclipout">
+    <div class="smclipin">
+
+<a href="<?php echo get_permalink($post->post_parent); ?>#<?php echo the_ID(); ?>">
+<?php the_content('Read the rest of this entry &raquo;'); ?>
+</a>
+
+</div></div></div>
+
+ <br class="clearleft">
+
+
+<font id=smcomichome>
+
+<a href="<?php echo get_permalink($post->post_parent); ?>#<?php echo the_ID(); ?>">
+
+<?php echo get_the_title($post); ?></a></font><br>
+
+
+<font id=smtitleparthome><?php echo wp_seriesmeta_write(); ?><br>
+
+by <br></font>
+<font id=smtitleauthorhome><?php the_author_link(); ?></font><br>
+
+<font id=smtitleparthome> <?php the_time('j M Y'); ?> </font><br>
+
+   
+   
+      </div>
+  <?php $counter++; ?>
+      <?php endforeach; ?>
+      
+    <br class="clearboth">
+  <div id=keyline> </div> <br class="clearboth">
+  
+
+<div id=keyline> </div>       
+<div id=keybump> </div>
+
+<font id=authorcoming>coming soon:<br>
+Gabrielle Bell<br>
+Ben Jones<br>
+John Pham<br>
+John Porcellino<br>
+</font>
+
+<font id=authorheaders>strips by:</font><br>
+
+<? $pageChildren = $wpdb->get_results("SELECT *	FROM $wpdb->posts WHERE post_parent = 314	AND post_type = 'page' ORDER BY menu_order", 'OBJECT');	?>
+<? if ( $pageChildren ) : foreach ( $pageChildren as $pageChild ) : setup_postdata( $pageChild ); ?>
+
+
+
+
+<font id="authorlist"" style="margin-left: 20px; margin-bottom: 20px;"><a href="/authors/#<?php echo get_the_title($pageChild); ?>"><?php echo get_the_title($pageChild); ?></a></font><br>
+
+<? endforeach; endif; ?>
+
+
+-->
+
+
+    <br class="clearboth">
+  <div id=keyline> </div> <br class="clearboth">
+  
+
+<?php get_footer(); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- This is the AUTHOR bit on the front  page  
+  
+  <div id=keyline> </div> 
+        
+<?php $my_query = new WP_Query('posts_per_page=1');
+  while ($my_query->have_posts()) : $my_query->the_post();
+  $title = $post->ID; ?>
+  
+  
+
+
+
+<?php $postid = get_the_author_meta('aim'); ?>  <!-- Get Author Page ID from AIM field in User Profile -->
+
+
+
+<a href="<?php echo get_permalink($postid); ?>">
+<img id=authorphoto src="<?php echo get_post_meta($postid, 'author_photo', true); ?>" alt="" /> 
+
+<div id=authorname><?php echo get_post_meta($postid, 'author_name', true); ?></div>
+</a>
+
+<div id=authortitle><?php echo get_post_meta($postid, 'author_title', true); ?></div>
+
+
+<div id=authorquote>&#8220;<?php echo get_post_meta($postid, 'author_quote', true); ?>&#8221;</div>
+
+
+<a href="<?php echo get_permalink($postid); ?>">
+<img class="readbutton" src="/wp-content/themes/AAwhatthingsdo/images/BUTTONread.png">
+</a>
+
+
+<?php endwhile; ?>
+<br class="clearboth"><div id=keyline> </div> 
+
+<!-- THAT was artist profile -->
+
+-->
+
+   
+   
+ <!--  THIS is the final tier for new posts 
+ 
+     
+      <?php foreach($the_new as $post) :
+   
+      setup_postdata($post); ?>
+  
+      <strong><?php the_time('F jS, Y') ?></strong><br />
+   
+      <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a>
+   
+      <br /><br />
+   
+      <?php endforeach; ?>
+        
+THAT was the final tier for new posts   -->
+
+  
+<!--  THIS posts additonal reading comics  
+
+     
+<div id=addreading>
+    
+ 
+    <div class=shrinker>
+<div id=authorheaders>additional reading</div></div><div id=keybump> </div>
+        
+<?php $my_query = new WP_Query('posts_per_page=2');
+  while ($my_query->have_posts()) : $my_query->the_post();
+  $title = $post->ID; ?>
+  
+  
+
+
+
+<?php $postid = get_the_author_meta('aim'); ?>  <!-- Get Author Page ID from AIM field in User Profile -->
+
+<?php $comics = get_post_meta($postid, 'comiclink', false); ?>  <!-- Comic links putlled from CUSTOM FIELDS on Author page -->
+
+
+
+<?php $comics = get_post_meta($postid, 'comiclink', false); ?> 
+
+	
+	<?php foreach($comics as $comic) {
+	echo ''.$comic.'';
+	} ?>
+	
+
+<?php endwhile; ?>
+<br class="clearboth"><div id=keyline> </div> 
+
+</div>
+	
+	
+
+
+ THAT posted additonal reading comics    -->
+ 
+ 
+ 
+ <!-- Old Home, as of April 7 2010 -->
+ 
+ 
+ 
+
+<?php
+$current_day = date_i18n('j F Y');
+$name_day = date_i18n('l');
+
+$today = getdate();
+$todaysposts = query_posts('year=' .$today["year"] .'&monthnum=' .$today["mon"] .'&day=' .$today["mday"] );
+
+?>
+
+
+
+ <?php $numbertodaysposts = 0; ?>  
+
+<?php foreach($todaysposts as $post) :
+  
+      setup_postdata($post); ?>
+ 
+<div id="<?php the_category_unlinked(''); ?>"> 
+
+
+<div id=keyline> </div> 
+
+<?php if ( $numbertodaysposts&1 )  
+		{ echo "<div class='toprightbox'>" ; }
+		
+	else { echo "<div class='topleftbox'>" ; } ?>
+
+<?php if ( $numbertodaysposts == 0 ) { echo "<font id='dayhome'>$name_day</font>" ; }
+else {echo "<font id='dayhome'>&nbsp;</font>" ; }
+?>
+<font id="titledatehome"><?php echo "$current_day" ?> </font>
+
+<font id="comictitlehome"><a href="<?php echo get_permalink($post->post_parent); ?>#<?php echo the_ID(); ?>">
+<?php echo get_the_title($post); ?>
+</a></font><div style="font-size:0;height:5px;"></div>  
+
+
+<font id="titleparthome"><?php echo wp_seriesmeta_write(); ?><br>
+
+by <br></font>
+<font id="titleauthorhome"><?php the_author_link(); ?></font><br>
+
+<?php $authoradd = get_post_meta($post->ID, 'authoradd', true); ?>
+
+
+<?php  if($authoradd){ 
+	 echo "<font id='titleparthome'>drawn by</font><br>";
+	 echo "<font id='titleauthorhome'>$authoradd</font><br>";
+	} else {
+     echo "";
+   } ?>
+
+<a href="<?php echo get_permalink($post->post_parent); ?>#<?php echo the_ID(); ?>">
+<img class="readbutton" src="/wp-content/themes/AAwhatthingsdo/images/BUTTONread.png">
+</a>
+
+</div>
+
+<div id="bigyellowtint">
+
+<?php if (in_category('New Work')) { echo " <div id='newwork'> </div>"; } ?>
+
+<div class="bigclipout">
+    <div class="bigclipin">
+
+<a href="<?php echo get_permalink($post->post_parent); ?>#<?php echo the_ID(); ?>">
+<?php the_content('Read the rest of this entry &raquo;'); ?>
+</a>
+
+</div></div></div>
+
+
+</div>
+
+ <br class="clearboth">
+ 
+<?php $numbertodaysposts++; ?>
+
+<?php endforeach; ?>  
+   
+
+<div id=keyline> </div> <br class="clearboth">
+<div id=keyline> </div>     
+    
+    
+ <font id="headlinehome">
+Recently
+</font> <br class="clearboth">   
+    
+
+
+      <?php
+  
+      global $post;
+ 
+      $the_newer = get_posts('numberposts=4&offset='.$numbertodaysposts.'');
+  	?>
+    
+     <?php $counter = 0; ?>   
+      <?php foreach($the_newer as $post) : setup_postdata($post); ?>
+      
+     
+     <?php if ( $counter == 4 ) { echo  "<br class='clearboth'><br>" ; } ?>
+     	 
+<div class="smalllowerbox" <?php post_class() ?> id="post-<?php the_ID(); ?>">
+   
+
+ 
+   <div id="smyellowtint">
+<div class="smclipout">
+    <div class="smclipin">
+
+<a href="<?php echo get_permalink($post->post_parent); ?>#<?php echo the_ID(); ?>">
+<?php the_content('Read the rest of this entry &raquo;'); ?>
+</a>
+
+</div></div></div>
+
+ <br class="clearleft">
+
+
+<font id=smcomichome>
+
+<a href="<?php echo get_permalink($post->post_parent); ?>#<?php echo the_ID(); ?>">
+
+<?php echo get_the_title($post); ?></a></font><br>
+
+
+<font id=smtitleparthome><?php echo wp_seriesmeta_write(); ?><br>
+
+by <br></font>
+<font id=smtitleauthorhome><?php the_author_link(); ?></font><br>
+
+<font id=smtitleparthome> <?php the_time('j M Y'); ?> </font><br>
+
+   
+   
+      </div>
+  <?php $counter++; ?>
+      <?php endforeach; ?>
+      
+    <br class="clearboth">
+  <div id=keyline> </div> <br class="clearboth">
+  
+
+<!-- List of Artists -->
+
+<div id=keyline> </div>       
+<div id=keybump> </div>
+
+<font id=authorcoming>coming soon:<br>
+Dan Zettwoch<br>
+Jaime Hernandez<br>
+Dan DeCarlo<br>
+Gabrielle Bell<br>
+Ben Jones<br>
+John Pham<br>
+</font>
+
+<font id=authorheaders>comics by:</font><br>
+
+<? $pageChildren = $wpdb->get_results("SELECT *	FROM $wpdb->posts WHERE post_parent = 314	AND post_type = 'page' ORDER BY menu_order", 'OBJECT');	?>
+<? if ( $pageChildren ) : foreach ( $pageChildren as $pageChild ) : setup_postdata( $pageChild ); ?>
+
+
+
+
+<font id="authorlist"" style="margin-left: 20px; margin-bottom: 20px;"><a href="/authors/#<?php echo get_the_title($pageChild); ?>"><?php echo get_the_title($pageChild); ?></a></font><br>
+
+<? endforeach; endif; ?>
+
+
+    <br class="clearboth">
+  <div id=keyline> </div> <br class="clearboth">
+  
+  
+  
+
+
+
+<?php get_footer(); ?>
+
+
+
+ <!-- END of Old Home, as of April 7 2010 -->
+
+

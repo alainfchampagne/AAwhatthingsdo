@@ -1,0 +1,983 @@
+
+
+
+/* This is the multi-column breif-description */
+
+#describe_columns {
+  	-moz-column-count: 3;
+	-moz-column-gap: 40px;
+	
+	-webkit-column-count: 3;
+	-webkit-column-gap: 40px;
+	
+	column-count: 3;
+	column-gap: 40px;
+
+   	padding: 25px 20px 0px 20px;   
+   	margin-bottom: -10px; 
+    text-align: justify;
+    text-justify: newspaper;
+} 
+
+#describe_text {
+	font: 0.9em  Garamond, Georgia, "Times New Roman", Times, serif;
+	margin-top: 10px;
+    color: #6d6b61;
+	letter-spacing: 0.05em;
+    margin-left: 20px;
+}
+
+
+
+/* These are previous & next buttons */
+
+
+.oldrbutton { 
+	display: inline;
+	float: left;
+	position: relative; top: -20px; left: 20px; margin-bottom:5px;
+	border: none;
+}
+
+.newrbutton {  
+	display: inline;
+	float: right;
+	position: relative; top: -20px; right: 25px; margin-bottom:5px;
+	border: none;
+}
+
+
+
+
+
+/* This is the BUY button */
+
+.buybutton {
+	width: 63px; 
+	height: 32px; 
+	position: absolute; top: -7px; left: 730px;
+	border: none;
+}
+
+.buybutton2 {
+	width: 63px; 
+	height: 32px; 
+	position: relative; top: -7px; right: 20px;
+	float: right;
+	border: none;
+}
+
+#prevnextline {
+	margin-bottom: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    position: relative; left: 0px; top: -15px; bottom: 0px;
+    text-decoration: none;
+    color: #6d6b61;
+}
+
+
+#basicbox{
+	float:left;
+	width: 940px;
+	padding-left: 20px;
+	margin-right: 0px; 
+	padding-bottom: 0px;
+	border: 0px solid red;
+
+
+}
+
+
+.anchoroffset{
+   position:relative;
+   top:-157px;
+   border: red solid 0px;
+}
+
+.anchoroffset2{
+   position:relative;
+   top:-24px;
+   border: red solid 0px;
+}
+
+#authorphoto {
+	width: 366px;
+	display:block;
+	float: left;
+	margin-left: 0px;
+	margin-right: 20px;
+	margin-bottom: 0px;
+ 	border: none;
+
+}
+
+#authorname {
+		font: 2.9em Arial, sans-serif;
+        letter-spacing: 0.06em;     
+        line-height: 1em;
+		font-weight: bold;
+		text-transform: uppercase;
+		position: relative;
+		margin-bottom: 8px; 
+		margin-top: 15px; 
+        margin-left: 20px;
+        margin-right: 20px;
+        color: #f00;
+}
+
+
+#authortitle {
+		font: 0.8em Arial, sans-serif;
+		font-weight: bolder;
+		text-transform: uppercase;
+		position: relative;
+		margin-bottom: 10px; 
+        letter-spacing: 0.05em;
+        margin-left: 20px;
+        margin-right: 20px;        
+        line-height: 2em;
+        color: #000;
+}
+
+
+#authorquote {
+		font: 1.8em Arial, sans-serif;
+		font-weight: bold;
+        letter-spacing: 0.05em;
+		position: relative;
+		bottom: 0px; 
+        margin-left: 0px;
+        margin-right: 20px;
+        color: #ccc9b5;
+}
+
+
+
+#authorheaders {
+		font: 1.8em Arial, sans-serif;
+		color: #ccc9b5;
+		font-weight: bold;
+        letter-spacing: 0.05em;
+		text-transform: uppercase;
+		display: inline;
+		position: relative;
+     	margin-top: 8px;
+     	margin-bottom: 4px;
+        margin-left: 20px;
+        margin-right: 20px;
+}
+
+#authorheaders a { 
+        color: #ccc9b5;
+        text-decoration: none;
+}
+
+#authorheaders a:hover {
+        color: #ff028b;
+        text-decoration: none;
+}
+
+
+#authorlinkline {
+        display: block;
+		position: relative;
+     	margin-top: 0px;
+     	margin-bottom: 13px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+
+}
+
+
+#authorlink {
+		font: 0.8em Arial, sans-serif;
+		font-weight: bold;
+		text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin-left: 0px;
+        margin-right: 0px;
+        color: #6d6b61;
+}
+
+#authorlink a { 
+        color: #FOO;
+        text-decoration: none;
+}
+
+
+#authorlinklower {
+		font: 0.8em Arial, sans-serif;
+		font-weight: bold;
+        letter-spacing: 0.06em;
+        margin-left: 0px;
+        margin-right: 0px;
+        color: #6d6b61;
+}
+
+#authorlinksub {
+		font: 0.7em Georgia, "Times New Roman", Times, serif;
+        margin-left: 0px;
+        margin-right: 0px;
+        color: #6d6b61;
+		letter-spacing: 0.15em;
+}
+
+
+#authorboxleft {
+	width: 468px;
+	display:block;
+	float: left;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	border-top:1px solid #b7b4a2; 
+	border-right:1px solid #b7b4a2; 
+	border-bottom:1px solid #b7b4a2; 
+	background-color: #fffbe2;
+	padding-bottom: 8px;
+}
+
+
+#authorboxright {
+	width: 468px;
+	display:block;
+	float: right;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	border-top:1px solid #b7b4a2; 
+	border-left:1px solid #b7b4a2; 
+	border-bottom:1px solid #b7b4a2; 
+	background-color: #fffbe2;
+	padding-bottom: 8px;
+}
+
+#authorboxrightnoborder {
+	width: 468px;
+	display:block;
+	float: right;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	border-top:0px;
+	border-left:0px;
+	border-bottom:0px;
+	background-color: #fffbe2;
+	padding-bottom: 8px;
+}
+
+
+#continued {
+		font: 1.8em Arial, sans-serif;
+		color: #ccc9b5;
+        letter-spacing: 0.06em;     
+        line-height: 1em;
+		font-weight: bold;
+		text-transform: uppercase;
+		position: relative; 
+		float:right;
+		margin-bottom: 20px; 
+		margin-top: 0px; 
+        margin-left: 20px;
+        margin-right: 20px;
+}
+
+
+#sociallinks {
+
+	display:inline;
+	float: left;
+	margin-top: -24px;
+	margin-left: 120px;
+	border: 0px solid red;
+
+}
+
+
+
+
+
+
+
+/* Delete Below */
+
+
+#stacks_columns {
+	-webkit-column-count: 3;	/* Safari and Chrome */
+	-moz-column-count: 3; 		/* Firefox */	
+	column-count: 3; 
+
+	-webkit-column-gap: 20px;	/* Safari and Chrome */
+	-moz-column-gap: 20px; 		/* Firefox */
+	column-gap: 20px; 
+	
+	
+
+
+   	padding: 0px 20px 0px 20px;   
+   	margin-bottom: 30px; 
+    text-justify: newspaper;
+    border: 0px solid red;
+} 
+
+#stacks_authors {
+		font: 1.5em Arial, sans-serif;
+		font-weight: bold;
+        letter-spacing: 0.06em;
+		text-transform: uppercase;
+     	margin-top: 8px;
+     	margin-bottom: 20px;
+        margin-left: 0px;
+        margin-right: 20px;
+}
+
+
+#intNAVstripes {
+	background-image: url(images/TOPstripes3.gif);
+	display: block;
+	height: 38px;
+	width: 960px;
+	margin-top: 0px;	
+	border: none;
+	z-index: 10;
+	position: relative;
+	}
+/* This is for TOP NAVIGATION */
+
+
+/* This is for STACKS DROPDOWN sliding panel */
+	
+#toppanel {
+	
+	position: absolute;   /*if FIXED Panel will overlap  content */
+	/*position: relative;*/   /*Panel will "push" the content down */
+	padding-top: 8px;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 100%; 
+	}
+	
+#panel {
+	width: 100%;
+	height: auto;
+	font-size: 100%;
+	font: Georgia, "Times New Roman", Times, serif;
+    letter-spacing: 0.02em;
+	color: #999999;
+	background: #fff;
+	overflow: hidden;
+	position: relative;
+	z-index: 49;
+	display: none;
+}
+
+
+#panel .content {
+	width: 960px;
+	height: auto;
+	margin: 0px 0px;
+	padding-top: 15px;
+	text-align: left;
+	font-size: 0.85em;
+	color: #5a583d;
+	border: 0px solid red;
+	}
+#panel .content .left {
+	width: 268px;
+	float: left;
+	margin-bottom: 25px;
+	padding: 0px 15px;
+	border-right: 1px solid #8b8664;
+	min-height: 220px;
+}
+
+
+/* Panel Tab/button */
+
+.tab {
+  	background: url(images/tab_b3.png) repeat-x 0 0;
+	height: 1px;
+	position: relative;
+	z-index: 999;
+}
+.tab ul.login {
+	display: block;
+	position: relative;
+  	float: right;
+  	clear: right;
+  	height: 42px;
+	width: auto;
+	line-height: 42px;
+	margin: 0;
+	right: 742px;
+  	color: white;
+  	font-size: 100%;
+	text-align: center;
+}
+.tab ul.login li.left {
+  	background: url(images/tab_l2.png) no-repeat left 0;
+  	height: 42px;
+	width: 17px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: left;
+}
+.tab ul.login li.right {
+  	background: url(images/tab_r2.png) no-repeat left 0;
+  	height: 42px;
+	width: 17px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: left;
+}
+.tab ul.login li {
+ 	text-align: left;
+  	padding: 0 0px;
+	display: block;
+	float: left;
+	height: 42px;
+  	background: url(images/tab_m2.png) repeat-x 0 0;
+}
+.tab ul.login li a {
+
+	font: 0.55em Georgia, "Times New Roman", Times, serif;
+	letter-spacing: 0.2em;
+	top: -1px;
+	color: #8f7d3b;
+}
+.tab ul.login li a:hover {
+	color: #ff0000;
+}
+.tab .sep {color:#414141}
+.tab a.open{
+	height: 20px;
+	line-height: 20px !important;
+	padding-left: 15px !important;
+	cursor: pointer;
+	display: block;
+	width: 90px;
+	position: relative;
+	top: 0px;
+}
+.tab a.close {
+	height: 20px;
+	line-height: 20px !important;
+	padding-left: 15px !important;
+	cursor: pointer;
+	display: block;
+	width: 90px;
+	position: relative;
+	padding-top: 1px;
+}
+.tab a.open {background: url(images/bt_open.png) no-repeat left 1px;}
+.tab a.close {background: url(images/bt_close.png) no-repeat left 1px;}
+.tab a:hover.open {background: url(images/bt_open.png) no-repeat left -18px;}
+.tab a:hover.close {background: url(images/bt_close.png) no-repeat left -18px;}
+
+
+/* DELETE ABOVE */
+
+
+
+
+
+
+
+
+
+
+/* This is for TOP NAVIGATION */
+
+
+#stacks_columns {
+	-webkit-column-count: 3;	/* Safari and Chrome */
+	-moz-column-count: 3; 		/* Firefox */	
+	column-count: 3; 
+
+	-webkit-column-gap: 20px;	/* Safari and Chrome */
+	-moz-column-gap: 20px; 		/* Firefox */
+	column-gap: 20px; 
+	
+	
+
+
+   	padding: 0px 20px 0px 20px;   
+   	margin-bottom: 30px; 
+    text-justify: newspaper;
+    border: 0px solid red;
+} 
+
+#stacks_authors {
+		font: 1.5em Arial, sans-serif;
+		font-weight: bold;
+        letter-spacing: 0.06em;
+		text-transform: uppercase;
+     	margin-top: 8px;
+     	margin-bottom: 20px;
+        margin-left: 0px;
+        margin-right: 20px;
+}
+
+
+#NAVstripes {
+	background-image: url(images/TOPstripes2.gif);
+	display: block;
+	height: 29px;
+	width: 960px;
+	margin: 0px;	
+	border: none;
+	z-index: 10;
+	position: inherit;
+	}
+/* This is for TOP NAVIGATION */
+
+
+
+
+/* This is for STACKS DROPDOWN sliding panel */
+	
+#STACKStoppanel {
+	
+	position: absolute;   /*if FIXED Panel will overlap  content */
+	/*position: relative;*/   /*Panel will "push" the content down */
+	padding-top: 12px;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 100%; 
+	height: 1px;
+	}
+	
+#STACKSpanel {
+	width: 100%;
+	height: auto;
+	font-size: 100%;
+	font: Georgia, "Times New Roman", Times, serif;
+    letter-spacing: 0.02em;
+	color: #999999;
+	background: #fff;
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+	display: none;
+}
+
+
+#STACKSpanel .STACKScontent {
+	width: 960px;
+	margin: 5px 5px;
+	padding-top: 15px;
+	text-align: left;
+	font-size: 0.85em;
+	color: #5a583d;
+	}
+#STACKSpanel .STACKScontent .STACKSleft {
+	width: 268px;
+	float: left;
+	margin-bottom: 25px;
+	padding: 0px 15px;
+	border-right: 1px solid #8b8664;
+	min-height: 220px;
+}
+
+
+/* THE STACKS  Panel Tab/button */
+
+.tabSTACKS {
+  	background: url(images/tab_b5.png) repeat-x 0 0;
+	height: 1px;
+	position: relative;
+	z-index: 10;
+}
+.tabSTACKS ul.STACKSlogin {
+	display: block;
+	position: relative;
+  	float: right;
+  	clear: right;
+  	height: 42px;
+	width: auto;
+	line-height: 42px;
+	margin: 0;
+	right: 578px;
+  	color: white;
+  	font-size: 100%;
+	text-align: center;
+}
+.tabSTACKS ul.STACKSlogin li.STACKSleft {
+  	background: url(images/tab_l5.png) no-repeat left 0;
+  	height: 42px;
+	width: 17px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: left;
+}
+.tabSTACKS ul.STACKSlogin li.STACKSright {
+  	background: url(images/tab_r5.png) no-repeat left 0;
+  	height: 42px;
+	width: 17px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: left;
+}
+.tabSTACKS ul.STACKSlogin li {
+ 	text-align: left;
+  	padding: 0 0px;
+	display: block;
+	float: left;
+	height: 42px;
+  	background: url(images/tab_m5.png) repeat-x 0 0;
+}
+.tabSTACKS ul.STACKSlogin li a {
+
+	font: 0.55em Georgia, "Times New Roman", Times, serif;
+	letter-spacing: 0.2em;
+	top: -1px;
+	color: #8f7d3b;
+}
+.tabSTACKS ul.STACKSlogin li a:hover {
+	color: #ff0000;
+}
+.tabSTACKS .sep {color:#414141}
+.tabSTACKS a.STACKSopen{
+	height: 20px;
+	line-height: 20px !important;
+	padding-left: 15px !important;
+	cursor: pointer;
+	display: block;
+	width: 90px;
+	position: relative;
+	top: 0px;
+}
+.tabSTACKS a.STACKSclose {
+	height: 20px;
+	line-height: 20px !important;
+	padding-left: 15px !important;
+	cursor: pointer;
+	display: block;
+	width: 90px;
+	position: relative;
+	padding-top: 1px;
+}
+.tabSTACKS a.STACKSopen {background: url(images/bt_open.png) no-repeat left 1px;}
+.tabSTACKS a.STACKSclose {background: url(images/bt_close.png) no-repeat left 1px;}
+.tabSTACKS a:hover.STACKSopen {background: url(images/bt_open.png) no-repeat left -18px;}
+.tabSTACKS a:hover.STACKSclose {background: url(images/bt_close.png) no-repeat left -18px;}
+
+
+
+
+
+
+
+
+/* This is for STORE DROPDOWN sliding panel */
+	
+#STOREtoppanel {
+	
+	position: absolute;   /*if FIXED Panel will overlap  content */
+	/*position: relative;*/   /*Panel will "push" the content down */
+	padding-top: 4px;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 100%; 
+	height: 1px;
+	}
+	
+#STOREpanel {
+	width: 100%;
+	height: auto;
+	font-size: 100%;
+	font: Georgia, "Times New Roman", Times, serif;
+    letter-spacing: 0.02em;
+	color: #999999;
+	background: #fff;
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+	display: none;
+}
+
+
+#STOREpanel .STOREcontent {
+	width: 960px;
+	margin: 5px 5px;
+	padding-top: 15px;
+	text-align: left;
+	font-size: 0.85em;
+	color: #5a583d;
+	}
+#STOREpanel .STOREcontent .STOREleft {
+	width: 268px;
+	float: left;
+	margin-bottom: 25px;
+	padding: 0px 15px;
+	border-right: 1px solid #8b8664;
+	min-height: 220px;
+}
+
+
+/* THE STORE  Panel Tab/button */
+
+.tabSTORE {
+  	background: url(images/tab_b4a.png) repeat-x 0 0;
+	height: 1px;
+	position: relative;
+	z-index: 10;
+}
+.tabSTORE ul.STORElogin {
+	display: block;
+	position: relative;
+  	float: right;
+  	clear: right;
+  	height: 42px;
+	width: auto;
+	line-height: 42px;
+	margin: 0;
+	right: 415px;
+  	color: white;
+  	font-size: 100%;
+	text-align: center;
+}
+.tabSTORE ul.STORElogin li.STOREleft {
+  	background: url(images/tab_l4.png) no-repeat left 0;
+  	height: 42px;
+	width: 17px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: left;
+}
+.tabSTORE ul.STORElogin li.STOREright {
+  	background: url(images/tab_r4.png) no-repeat left 0;
+  	height: 42px;
+	width: 17px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: left;
+}
+.tabSTORE ul.STORElogin li {
+ 	text-align: left;
+  	padding: 0 0px;
+	display: block;
+	float: left;
+	height: 42px;
+  	background: url(images/tab_m4.png) repeat-x 0 0;
+}
+.tabSTORE ul.STORElogin li a {
+
+	font: 0.55em Georgia, "Times New Roman", Times, serif;
+	letter-spacing: 0.2em;
+	top: -1px;
+	color: #8f7d3b;
+}
+.tabSTORE ul.STORElogin li a:hover {
+	color: #ff0000;
+}
+.tabSTORE .sep {color:#414141}
+.tabSTORE a.STOREopen{
+	height: 20px;
+	line-height: 20px !important;
+	padding-left: 15px !important;
+	cursor: pointer;
+	display: block;
+	width: 90px;
+	position: relative;
+	top: 0px;
+}
+.tabSTORE a.STOREclose {
+	height: 20px;
+	line-height: 20px !important;
+	padding-left: 15px !important;
+	cursor: pointer;
+	display: block;
+	width: 90px;
+	position: relative;
+	padding-top: 1px;
+}
+.tabSTORE a.STOREopen {background: url(images/bt_open.png) no-repeat left 1px;}
+.tabSTORE a.STOREclose {background: url(images/bt_close.png) no-repeat left 1px;}
+.tabSTORE a:hover.STOREopen {background: url(images/bt_open.png) no-repeat left -18px;}
+.tabSTORE a:hover.STOREclose {background: url(images/bt_close.png) no-repeat left -18px;}
+
+
+
+
+
+
+
+/* This is for MOREBY DROPDOWN sliding panel */
+	
+#MOREBYtoppanel {
+	
+	position: absolute;   /*if FIXED Panel will overlap  content */
+	/*position: relative;*/   /*Panel will "push" the content down */
+	padding-top: 8px;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 100%; 
+	height: 1px;
+	}
+	
+#MOREBYpanel {
+	width: 100%;
+	height: auto;
+	font-size: 100%;
+	font: Georgia, "Times New Roman", Times, serif;
+    letter-spacing: 0.02em;
+	color: #999999;
+	background: #fff;
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+	display: none;
+}
+
+
+#MOREBYpanel .MOREBYcontent {
+	width: 960px;
+	margin: 5px 0px;
+	padding-top: 15px;
+	text-align: left;
+	font-size: 0.85em;
+	color: #5a583d;
+	}
+#MOREBYpanel .MOREBYcontent .MOREBYleft {
+	width: 268px;
+	float: left;
+	margin-bottom: 25px;
+	padding: 0px 15px;
+	border-right: 1px solid #8b8664;
+	min-height: 220px;
+}
+
+
+/* THE MOREBY  Panel Tab/button */
+
+.tabMOREBY {
+  	background: url(images/tab_b2a.png) repeat-x 0 0;
+	height: 1px;
+	position: relative;
+	z-index: 10;
+}
+.tabMOREBY ul.MOREBYlogin {
+	display: block;
+	position: relative;
+  	float: right;
+  	clear: right;
+  	height: 42px;
+	width: auto;
+	line-height: 42px;
+	margin: 0;
+	right: 744px;
+  	color: white;
+  	font-size: 100%;
+	text-align: center;
+}
+.tabMOREBY ul.MOREBYlogin li.MOREBYleft {
+  	background: url(images/tab_l2.png) no-repeat left 0;
+  	height: 42px;
+	width: 17px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: left;
+}
+.tabMOREBY ul.MOREBYlogin li.MOREBYright {
+  	background: url(images/tab_r2.png) no-repeat left 0;
+  	height: 42px;
+	width: 17px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: left;
+}
+.tabMOREBY ul.MOREBYlogin li {
+ 	text-align: left;
+  	padding: 0 0px;
+	display: block;
+	float: left;
+	height: 42px;
+  	background: url(images/tab_m2.png) repeat-x 0 0;
+}
+.tabMOREBY ul.MOREBYlogin li a {
+
+	font: 0.55em Georgia, "Times New Roman", Times, serif;
+	letter-spacing: 0.2em;
+	top: -1px;
+	color: #8f7d3b;
+}
+.tabMOREBY ul.MOREBYlogin li a:hover {
+	color: #ff0000;
+}
+.tabMOREBY .sep {color:#414141}
+.tabMOREBY a.MOREBYopen{
+	height: 20px;
+	line-height: 20px !important;
+	padding-left: 15px !important;
+	cursor: pointer;
+	display: block;
+	width: 90px;
+	position: relative;
+	top: 0px;
+}
+.tabMOREBY a.MOREBYclose {
+	height: 20px;
+	line-height: 20px !important;
+	padding-left: 15px !important;
+	cursor: pointer;
+	display: block;
+	width: 90px;
+	position: relative;
+	padding-top: 1px;
+}
+.tabMOREBY a.MOREBYopen {background: url(images/bt_open.png) no-repeat left 1px;}
+.tabMOREBY a.MOREBYclose {background: url(images/bt_close.png) no-repeat left 1px;}
+.tabMOREBY a:hover.MOREBYopen {background: url(images/bt_open.png) no-repeat left -18px;}
+.tabMOREBY a:hover.MOREBYclose {background: url(images/bt_close.png) no-repeat left -18px;}
+
+
+
+/* This is the END of the DROPDOWNS  */
+
+
+
+
+
+
+
+<!--
+
+[if IE]>
+<style>
+
+
+
+</style>
+<![EndIf]
+
+-->
+
+

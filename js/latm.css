@@ -1,0 +1,1749 @@
+@import "fonts-min.css";
+@import "reset-min.css";
+@import "dev.css";
+@import "fancybox.css";
+@import "lightbox.css";
+
+body {
+	font-family: helvetica, arial, serif;
+	background: white;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+
+}
+
+:focus {
+	outline-color:-moz-use-text-color;
+	outline-style:none;
+	outline-width:medium;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+p {
+	font-family: georgia, times, serif;
+	font-size: 12px;
+	line-height: 18px;
+	margin-bottom: 18px;
+}
+
+#article p a{
+	text-decoration: underline;
+}
+
+p a:hover{
+	text-decoration: none;
+}
+
+em {
+	font-style: italic;
+	
+}
+
+h1, h2 {
+	font-family: times, georgia, serif;
+}
+
+h3 {
+	font-family: helvetica, arial, serif;
+	font-size: 14px;
+	color: #d71920;
+	li/ne-height: 36px;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 18px;
+	line-height: 20px;
+}
+
+h2 em {
+	font-style: italic;
+}
+
+h2 small {
+	font-size: 14px;
+}
+
+h3 small {
+	font-size: inherit;
+	font-style: normal;
+	line-height:14px;
+	display: block;
+}
+
+
+
+
+.red {
+	color: #d71920;
+}
+
+.light-gray {
+	color: #7c7d80;
+}
+
+
+.medium-gray {
+	color: #595a5c;
+}
+
+h1 a, h2 a, h3 a {
+	color: #000000;
+	text-decoration:none;}
+
+h1 a:hover, h2 a:hover, h3 a:hover {
+	color: #666666;}
+
+
+.nav a, .nav li {
+	font-size: 10px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;}
+
+a:hover {
+	color: #d71920;}
+
+.nav ul { /* all lists */
+	padding: 0;
+	margin: 0; 
+	list-style: none;
+	height: 25px;
+	clear: both;}
+
+.nav li { /* all list items */
+	float: left;
+	position: relative;
+	white-space: nowrap;
+	margin: 0 8px;}
+
+#subnav li {
+	margin:0 1px;
+}
+
+.cufon-active #subnav li {
+	font-size: 10px;
+}
+
+
+#latm-nav li.first, #subnav li.first {
+	margin-left: 15px;
+	_margin-left: 7px;
+}
+
+
+ 
+#latm-nav li a, #subnav li a {
+	display: block;
+	padding: 3px 3px 2px 3px;
+}
+
+#latm-nav li a:hover, #subnav li a:hover {
+	background: #ffff99;
+	color: black;
+}
+
+#subnav li.text a{
+  background: none;
+letter-spacing: .1em;
+}
+
+#subnav li.pipe {
+	margin-top: 2px;
+	margin-right: 5px;
+	padding: 5px 2px 9px;
+	border-right: 1px solid black;
+	/*add this for IE*/
+	font-size: 0%;
+	line-height: 0%;
+}
+
+
+ul#footer-nav {
+	padding-left: 15px;
+}
+
+html#stories #latm-nav .stories a,
+html#conversations #latm-nav .conversations a,
+html#style #latm-nav .style a,
+html#living #latm-nav .living a,
+html#entertainment #latm-nav .entertainment a,
+html#blogs #latm-nav .blogs a,
+html#inside-la #latm-nav .inside-la a,
+html#overheard #subnav .overheard a,
+html#cat-overheard #subnav .overheard a,
+html#cat-50 #subnav .fifty a,
+html#turn_it_up #subnav .turn-it-up a,
+html#cat-turn_it_up_category #subnav .turn-it-up a,
+html#current #subnav .current a,
+html#past #subnav .past a,
+html#topics #subnav .topics a,
+html#july_2009 #subnav .current-issue a,
+html#past #subnav .issue-archive a
+
+{
+	background: #ffff99;
+}
+
+
+/*
+.nav li ul, ul#footer-nav li ul {  second-level lists
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url('http://latimesblogs.latimes.com/latm/images/nav-trans-1x1.png');
+	margin-left: -10px;
+	height: auto;
+	padding-top: 5px;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	z-index: 100;
+}
+
+ul#latm-nav li ul li, ul#footer-nav li ul li{
+	clear: both;
+	margin: 0 10px 0 10px;
+}
+
+ul#latm-nav li ul li a, ul#footer-nav li ul li a {
+	display: block;
+	width: auto;
+}
+*/
+/*
+ul#latm-nav li>ul, ul#footer-nav li>ul {  /*to override top and left in browsers other than IE, which will position to the top right of the containing li, rather than bottom left */
+	/*	top: 25px;
+	left: auto;
+}
+*/
+/*
+ul#latm-nav li:hover ul, ul#latm-nav li.over ul { /* lists nested under hovered list items */
+	/*	display: block;
+}
+*/
+#content {
+	clear: both;
+	padding: 26px 20px 0 20px;
+}
+
+.clear {
+	clear: both;
+}
+
+#wrap {
+	width: 980px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+
+#head {
+	background: url('http://latimesblogs.latimes.com/latm/images/header.png') no-repeat top;
+	height: 180px;	
+	position: relative;
+}
+
+a#latm {
+	width: 200px;
+	height: 120px;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 18px;
+}
+
+a#latimesmagazine {
+	height:55px;
+	width:277px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 18px;
+}
+
+
+ul#latm-nav {
+	position: absolute;
+	left: 0;
+	top: 135px;
+	text-transform: uppercase;
+	letter-spacing: .08em;
+	border-bottom: 1px solid black;
+	height: 24px;
+	width: 100%;
+}
+
+ul#latm-nav a, ul#latm-nav li{
+	font-size: 11px;
+}
+
+ul#subnav {
+	position: absolute;
+	left: 0;
+	top: 162px;
+	height:20px;
+	padding-top:6px;
+}
+
+a#latimeslink {
+	float: right;
+	color: white;
+	font-family: helvetica, arial, verdana, sans-serif;
+	padding-right: 20px;
+	font-weight: bold;
+	font-size: 85%;
+	line-height: 18px;
+}
+
+a#latimeslogo {
+	background: url(http://latimesblogs.latimes.com/latm/images/latimeslogo.png) no-repeat bottom left;
+	width: 145px;
+	height:25px;
+	display: block;
+	float: right;
+}
+
+a#latimeslink:hover {
+	text-decoration: underline;
+}
+
+#footer {
+	border-top: 1px solid black;
+	margin-top: 20px;
+	padding-top:25px;
+}
+
+#copyright {
+	font-size: 10px;
+	font-weight: bold;
+	color: #999;
+	clear: both;
+	padding: 0 0 0 20px;
+}
+
+ul#sitemap li {
+	padding: 5px !important;
+	margin: 5px  !important;
+}
+
+
+
+
+/*SEARCH*/
+
+#search-page h1 {
+	color: #d71920;
+}
+
+li.search {
+	margin: -4px 10px 0 0;
+	padding-bottom: 0;
+}
+
+ul#search {
+	position: absolute;
+	right: 18px;
+	top: 170px;
+	width: 228px;
+	z-index: 100;
+}
+
+#cse-search-box input#searchbox {
+	width: 190px;
+	border: 1px solid black;
+	padding: 1px;
+	font-size: 11px;
+	font-weight: normal;
+	color: #d71920;
+	position: absolute;
+	left: -18px;
+}
+
+#search-page #body {
+	margin: 0;
+	width: 600px;
+	overflow: hidden;
+}
+
+#cse-search-results iframe{
+  width: 585px !important;
+}
+
+#search a {
+	position: absolute;
+	right: -219px;
+}
+
+
+/*SPONSOR*/
+#sponsor {
+	height:60px;
+	position:absolute;
+  right:25px;
+  top:-100px;
+	width:234px;
+	display: none;
+}
+
+/*ARTICLES ALL*/
+#article h1 {
+	padding: 4px 0 0 0;
+}
+
+#article h2 {
+	padding: 0 0 20px 0;
+	margin-top: -2px;
+}
+
+#article h1 small{
+	display: block;
+	text-transform: uppercase;
+	font-size: 20px;
+	letter-spacing: .1em;
+}
+
+#article h1 .medium{
+	font-size: 60px;
+}
+
+#article h1 .big{
+	font-size: 84px;
+}
+
+
+
+#content {
+	position: relative;
+}
+
+#body {
+	margin-left: 85px;
+	float: left;
+	width: 503px;
+	min-height: 500px;
+	_width: 483px;
+	_margin-left: 40px;
+	_position: relative;
+	
+}
+
+.entry {
+	width: 587px;
+}
+
+.indent{
+	margin: 36px 0 0 85px;
+	font-size:93%;
+	line-height: 18px;
+	font-family: georgia, times, "time new roman", serif;
+}  
+
+a.date-header {
+	font-family: helvetica, arial, tahoma, verdana, sans-serif !important;
+	color: #939598;
+	font-size: 9px;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	font-weight: bold;
+	display: block;
+	margin-top: -2px;
+}
+
+a.date-header:hover {
+	color: #d71920;
+}
+
+
+
+
+/*DEPARTMENT*/
+
+.cat-10q.entry {
+  
+
+}
+
+.cat-10q #body, .cat-feature_story #body {
+	margin: 400px 0 0 85px;
+	font-size:93%;
+	line-height: 18px;
+	font-family: georgia, times, "time new roman", serif;
+}
+
+#entry-6a00d8341c630a53ef011571b94b95970b #body,
+#entry-6a00d8341c630a53ef011570c45fe4970c #body {
+	margin: 0 0 0 85px;
+}
+
+/*.cat-10q h1,
+.cat-feature_story h1, 
+.cat-pictorials h1 {
+  text-transform: uppercase;
+  letter-spacing: .07em;
+}*/
+
+.cat-10q h1,
+.cat-feature_story h1, 
+.cat-pictorials h1 {
+  font-size: 50px;
+  line-height: 40px;
+}
+
+.head-image {
+	margin-bottom: 14px;
+}
+
+.head-image.top-left {
+	position: absolute;
+	top: 26px;
+	left: 20px;
+  padding: 7px 7px 3px 7px;
+	border: 1px solid black;
+	width: auto;
+}
+
+.caption {
+	font-family: helvetica, arial, tahoma, verdana, sans-serif !important;
+	font-weight: bold;
+	font-size: 9px;
+	display: block;
+}
+
+.caption.left {
+	float: left;
+	margin-left: -105px;
+	width: 90px;
+	position: relative;
+	padding-top: 3px;
+}
+
+.top-left .caption {
+	position: absolute;
+	width: 90px;
+	top: 270px;
+	left: 304px;
+}
+
+
+.head-image.top-inline {
+	position: absolute;
+	top: 26px;
+	left: 105px;
+  padding: 7px 7px 3px 7px;
+	border: 1px solid black;
+}
+
+.top-inline .caption {
+		position: absolute;
+	width: 100px;
+	height: 300px;
+	top: 538px;
+	left: -105px;
+	padding: 0;
+}
+
+
+.head-image.full-width {
+	position: absolute;
+	top: 26px;
+	left: 20px;
+  padding: 7px 7px 3px 7px;
+	border: 1px solid black;
+	width: auto;
+}
+
+
+/*
+.head-image.full-width {
+  margin-left: -85px;
+  padding: 7px 7px 3px 7px;
+  border: 1px solid black;
+  width: auto;
+}*/
+
+
+
+.full-width .caption {
+	width: 85px;
+	height: 300px;
+	top: 538px;
+	left: -20px;
+	padding: 0;
+	
+}
+
+p.pull-left, p.pull-right, p.pull {
+  border-top: 1px solid black;
+	color: #d71920;
+	font-size: 24px;
+	border-bottom: 12px solid black;
+	line-height: 32px;
+	padding: 4px 0 14px 0;
+}
+
+p.pull-left {
+	width: 40%;
+	float: left;
+	margin: 7px 14px 21px 0;
+}
+
+p.pull-right {
+	width: 40%;
+	float: right;
+	margin: 7px 0 14px 21px;
+}
+
+p b, p strong {
+	font-size: 93%;
+	font-family: helvetica, arial, tahoma, verdana, sans-serif !important;
+	font-weight: bold;
+}
+
+p b em, p strong em{
+	font-style: italic;
+	font-weight: bold;
+}
+
+#article p img {
+	padding: 0 14px 0 0;
+}
+
+.department {
+	float: left;
+	margin-left: -105px;
+	width: 80px;
+	border-top: 1px solid black;
+	font-family: helvetica, arial, tahoma, verdana, sans-serif !important;
+	position: relative;
+}
+
+.department h3 {
+	font-size: 11px;
+	color: #d71920;
+}
+
+.department p {
+	font-size: 11px;
+}
+
+.department h3 a {
+	color: #d71920;
+}
+
+.department h3 a:hover {
+	color: #939598;
+}
+
+.department div {
+	text-transform: uppercase;
+	height: 72px;
+	line-height: 72px;
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+
+
+.department div p, .department div h3{
+	display:inline;
+	display:inline-table;
+	display:inline-block;
+	vertical-align:middle;
+	margin: 0;
+	line-height: 12px;
+}
+
+
+
+/*RIGHT*/
+
+#right {
+	width: 333px;
+	float: right;
+	clear: none;
+	position: relative;
+	
+}
+
+.outline {
+	border: 1px solid black;
+}
+
+.outline.pad-right {
+	margin: 0 12px 0 0;
+}
+
+/*Ads*/
+
+.ad-wrap {
+	border-top: 1px solid black;
+	font-size: 8px;
+	padding-top: 2px;
+	letter-spacing: .2em;
+	margin-top: 7px;
+	_height: auto !important;
+	_height: 500px;
+}
+
+.ad-wrap .advertisement {
+	margin-top: 5px;
+	background: #dedede;
+	text-align: center;
+	height:280px;
+overflow:hidden;
+}
+
+.ad-wrap .advertisement table {
+height: 280px;
+width: 333px;
+}
+
+.ad-wrap iframe {
+	display: block;
+	margin: 0 auto;
+	border: none;
+	overflow: hidden;
+}
+
+/*SECTION*/
+#section {
+border:1px solid;
+clear:left;
+float:left;
+min-height:484px;
+padding:7px;
+width:374px;
+}
+
+#section h1, #section h2 {
+	font-size: 48px;
+	line-height: 55px;
+}
+
+#section a.header {
+	font-family: times, georgia, serif;
+	font-size: 50px;
+	line-height: 50px;
+	display: block;}
+
+#section div {
+	display: none;
+	width: 360px;
+}
+
+#section a.image-link {
+	height: 82px;
+	width: 64px;
+	overflow: hidden;
+	display: block;
+	float: left;
+	margin-right: 14px;
+	margin-bottom: 7px;
+}
+
+
+
+#section a img {
+	height: 82px;
+}
+
+#section h3 a:hover {
+  color: #d71920;
+}
+
+#section ul {
+	padding: 7px 0 0 0;
+	
+}
+
+#section ul li{
+	padding: 0 0 25px 25px;
+	clear: both;
+}
+
+#section h1 {
+
+}
+
+#section h3 {
+	margin: -3px 0 0 77px;
+}
+
+#section p {
+	margin: 0px 0 0 77px;
+}
+
+#section p {
+  margin-top: 3px;
+	min-height: 54px;
+}
+
+#section .more a {
+  margin-left: 0px;
+}
+
+#section-promo {
+	float: right;
+	width: 180px;
+margin-right:14px;
+}
+
+#section.blogs {
+  width: 574px;
+}
+
+#section.blogs h3{
+	padding: 20px 0;
+	margin: 0;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+#section.blogs .header a:hover {
+	color: auto;
+}
+
+
+
+
+/*Default more link*/
+
+.more a {
+	font-size: 9px;
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	font-weight: bold;
+	margin-left: 57px;
+}
+
+#section li.more a:hover {
+	color: #d71920;
+}
+
+
+
+
+
+/*ISSUE ARCHIVE*/
+#issue-archive #body{
+	width: 600px;
+	margin-left:0px;
+	_width: 580px;
+}
+
+#issue-archive .issue {
+	float: left;
+	padding-right: 14px;
+	padding-bottom: 21px;
+	font-family: helvetica, arial, sans-serif;
+
+}
+#issue-archive .issue img {
+	width: 230px;
+	height: 300px;
+	border: 1px solid black;
+	display: block;
+	margin-bottom: 7px;
+	padding: 7px;
+}
+
+#issue-archive .issue a {
+	color: #939598;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 83%;
+	letter-spacing:.1em;
+}
+
+#issue-archive .issue a:hover {
+	color: #d71920;
+}
+
+#issue-archive h1 {
+	padding-bottom: 14px;
+}
+
+
+/*CATEGORY ARCHIVE*/
+#category-archive {
+	float: right;
+	margin-right: 18px;
+	_margin-right: 0px;
+}
+
+#category-archive #body {
+	width: 360px;
+	border: 1px solid #000000;
+	padding: 7px 21px 0 7px;
+	margin-left: 0px;}
+
+#category-archive a.image-link {
+  display:block;
+	float:left;
+	height:85px;
+	margin-right:14px;
+	overflow:hidden;
+	width:64px;}
+
+#category-archive .post {
+	padding: 0 0 25px 25px;
+	_padding-bottom: 0px;
+}
+#category-archive .post img {
+	float: left;
+	height: 83px;
+	margin-top: 2px;
+}
+
+#category-archive .post a {
+
+}
+
+#category-archive .post a:hover {
+	color: #d71920;
+}
+
+#category-archive .post-content {
+	margin-left: 77px;
+}
+
+#category-archive h1 {
+	font-size: 48px;
+	color: #D71920;
+  padding-bottom: 17px;
+}
+
+#category-archive h2{
+  color:#D71920;
+	font-family:helvetica,arial,serif;
+	font-size:14px;
+	line-height:36px;
+	_line-height: 20px;
+}
+
+#category-archive a.date-header {
+	display: none;
+  margin-bottom: 10px;
+}
+
+#category-archive p {
+  margin-top: 3px;
+}
+
+/*DATE BASED ARCHIVE*/
+
+#date-based-archive .post a {
+	color: black;
+	text-transform: none;
+	font-size: 120%;
+	letter-spacing:normal;
+}
+
+#date-based-archive .post p a {
+	color: black;
+	text-transform: none;
+	font-size: 100%;
+	letter-spacing:normal;
+}
+
+#cover {
+	padding-top: 14px;
+	border-bottom: 1px solid black;
+	padding-bottom: 14px;
+	margin-bottom: 14px;
+	position: relative;
+}
+
+
+#cover p {
+	bottom: 0;
+	right: 0;
+	width: 200px;
+	position: absolute;
+	margin-bottom: 10px;
+}
+
+#cover img {
+	border: 1px solid black;
+	padding: 7px;
+}
+
+
+/*PHOTOS*/
+.cat-photos #body {
+	margin: 0;
+}
+
+
+.gal2 {
+	width: 590px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 9px;
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	font-weight: bold;
+}
+
+
+
+.cat-pictorials #right {
+	margin-top:520px;
+}
+
+.entry-6a00d8341c630a53ef0120a63f3262970b #right {
+	margin-top:300px;
+}
+
+.entry-6a00d8341c630a53ef0120a63f3262970b #sliderContainer {
+	height: 273px !important;
+}
+
+.entry-6a00d8341c630a53ef0120a63f3262970b #imgviewer .caption {
+	min-width: 330px;
+	background: #ffff99;
+}
+
+#sliderContainer #imgviewer img {
+}
+
+/*.cat-pictorials h1.entry-title, .cat-pictorials .date-header {
+  display: none;
+}*/
+
+#article .cat-pictorials #body, #article .entry-6a00d8341c630a53ef0120a63f3262970b #body {
+	margin: 518px 0 0 85px;
+	font-size:93%;
+	line-height: 18px;
+	width: 503px;
+	font-family: georgia, times, "time new roman", serif;
+	
+}
+
+#article .entry-6a00d8341c630a53ef0120a63f3262970b #body{
+	margin: 300px 0 0 0;
+}
+
+.cat-pictorials #viewer, .entry-6a00d8341c630a53ef0120a63f3262970b #viewer {
+	width: 938px;
+  position: absolute;
+  left: 20px;
+  top: 26px;
+}
+
+.entry-6a00d8341c630a53ef0120a63f3262970b #viewer {
+	height:273px;
+}
+
+.entry-6a00d8341c630a53ef0120a63f3262970b #sliderContainer li {
+	height: 273px;
+	margin:0;
+}
+
+.entry-6a00d8341c630a53ef0120a63f3262970b #buttonLeft, .entry-6a00d8341c630a53ef0120a63f3262970b #buttonRight {
+	top:165px;
+}
+
+.cat-pictorials #introad, .entry-6a00d8341c630a53ef0120a63f3262970b #introad{
+	width: 920px;
+  position: absolute;
+  left: 20px;
+  top: 26px;
+}
+
+#imgviewer .caption {
+	margin: 0;
+}
+
+#home #imgviewer li {
+border:1px solid #000000;
+font-size:0;
+padding:9px;
+}
+
+/*TURN IT UP*/
+
+#ticker {
+	position: absolute;
+	top: 26px;
+	left: 20px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 7px 0;
+	_left: 0px;
+}
+
+.cat-turn_it_up #body{
+	background: url(http://latimesblogs.latimes.com/latm/images/TurnItUp.png) top no-repeat;
+	padding-top: 207px;
+	margin:0;
+	padding-left:85px;
+	width:515px;
+	_width: 495px;
+	_margin-left: 0px;
+}
+
+
+/*LONELY HEARTS*/
+.cat-lonely_hearts_book_club #body{
+	background: transparent url(http://latimesblogs.latimes.com/.a/6a00d8341c630a53ef0115724b1ba7970b-800wi) no-repeat scroll 65px 0px;
+	margin:-17px 0 0;
+	padding-left:85px;
+	padding-top:142px;
+	width:515px;
+}
+
+
+/*STYLE LIST*/
+.style-list-entry, .singular-sensation {
+	clear: both;
+	padding-bottom: 19px;
+	margin-bottom: 24px;
+	border-bottom: 1px solid black;
+}
+
+.singular-sensation img {
+	padding-bottom: 16px;
+}
+
+.style-list-entry img {
+	float: left;
+}
+
+.style-list-entry h3, .style-list-entry p {
+	margin-left: 230px;
+}
+
+.cat-the_style_list h3, .cat-culture h3, .cat-palate h3 {
+line-height:9px;
+padding-bottom:5px;
+color: black;
+letter-spacing: .1em;
+text-transform: uppercase;
+}
+
+.cat-the_style_list p {
+	font-family: helvetica, arial, verdana, sans-serif;
+}
+
+.style-list-entry p, .cat-the_style_list p.caption {
+	margin-bottom: 0;
+}
+
+.vertical {
+	width: auto;
+	float: left;
+	margin-bottom: 15px;
+}
+
+.vertical .caption {
+	display: block;
+}
+
+#home #tocmenu {
+	width: 183px;
+	left:426px;
+	_left: 406px;
+}
+
+#tocmenu {
+	height: 499px;
+	width: 183px;
+	left:426px;
+	_left: 14px;
+}
+
+
+#tocmenu.promo li {
+	height: auto;
+	height: 124px;
+	padding:0;
+	_height: 118px;
+}
+
+#tocmenu.promo li.image {
+	height:230px;
+	padding:9px;
+}
+
+#tocmenu.promo .tocAttr{
+	text-transform: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 100%;
+	_line-height: 13px;
+	_padding-bottom: 5px
+}
+
+#tocmenu.promo p.tocSection {
+	padding:  20px 0px 10px 0;
+}
+
+#tocmenu.promo.shared p.tocSection {
+	padding: 13px 0px 10px 0;
+	
+}
+
+.post-footer {
+  padding-top: 20px;
+}
+
+.cat-overheard .two h3 {
+  font-size: 30px;
+  height: 30px;
+  text-align: center;
+  letter-spacing: .1em;
+}
+
+.cat-overheard .two h2 {
+  font-size: 12px;
+  padding:0 !important;
+  text-align: center;
+  
+}
+
+.cat-overheard .two {
+  padding-bottom: 9px !important;
+  _padding-bottom: 6px !important;
+}
+
+/*PAGE FOOTER*/
+
+h3.comments-header, h2#comment-title {
+	line-height:9px;
+	padding-bottom:5px;
+	color: black;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+h2#comment-title {
+	font-size: 12px;
+}
+
+.post-footer, .post-footer p, .post-footer a {
+	font-family: arial, helvetica, sans-serif !important;
+}
+
+.page-nav, .row {
+  padding-bottom: 28px;
+}
+
+#list50promo {
+	width: 180px;
+}
+
+#list50promo img{
+	border: 1px solid black;
+}
+
+/*HIDE PICTORIALS*/
+h2.pictorials {
+	display: none;
+}
+
+
+/*VIDEOS*/
+
+.cat-videos h1 small{
+	font-size: 14px !important;
+}
+
+.cat-videos h2 {
+	font-size: 16px !important;
+}
+
+.cat-videos #body{
+	border: 1px solid black;
+	margin: 0;
+	width: 550px;
+	padding: 20px;
+}
+
+.cat-videos .video-footer {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	
+	margin: 0 -20px 20px -20px;
+}
+
+.cat-videos .post-footer, .cat-videos .row {
+	padding: 0;
+}
+
+.video-footer {
+	background: url(http://latimesblogs.latimes.com/latm/images/video/video_rule.gif) repeat-y left;
+}
+
+.cat-videos .left{
+	float: left;
+	width: 160px;
+	padding: 20px;
+}
+
+.cat-videos .right{
+	float: left;
+	width: 340px;
+	padding: 20px;
+}
+
+.cat-videos .video {
+	height:330px;
+	width: 550px;
+	overflow:hidden;
+        margin:0 0 20px;
+}
+
+.cat-videos .video #PaperVideoTest {
+	margin-top: -44px;
+}
+
+.video-footer h2 {
+	font-size: 30px;
+}
+
+.video-footer h3 {
+	color: black;
+	font-size: 12px;
+	line-height: 16px;
+	padding-bottom: 16px;
+}
+
+.video-footer h3 a {
+	color: #d71920;
+}
+
+.video-footer h3 a:hover {
+	color: gray;
+}
+
+.video-footer p {
+	margin-top: 0;
+	font-family: georgia, times, serif;
+}
+
+.video-intro {
+border-top:1px solid black;	
+padding: 14px 0 0 0 ;
+}
+
+.video-intro img {
+	float: left;
+	padding: 0 14px 14px 0;
+	display: none;
+}
+
+.video-intro h3 {
+	padding-top: 14px;
+}
+
+a.video-link {
+	float:left;
+	padding: 0 14px 7px 0;
+	
+}
+
+
+/*ISSUES*/
+
+
+#issues {
+font-family: Helvetica, Arial, sans-serif;
+border: 1px solid #000;
+width: 374px;
+padding: 5px 0px 14px 14px;
+position: relative;
+min-height: 480px;}
+
+#issuenav {
+	margin-bottom: 32px;}
+	
+#issuenav p {
+font-family: Arial, Verdana, sans-serf;
+font-size: 13px;
+margin-top: -1px;}
+
+#showissue, #issuearchive {
+	float: left;
+	display: inline;}
+	
+#showissue {
+	margin: 6px 6px 0 0;
+	width: 174px;
+	}
+	
+#showissue .container {
+	width: 18px;
+	height: 234px;
+	margin-bottom: 10px;}
+	
+#showissue img{
+	}
+	
+#issuearchive {
+	width: 186px;
+	overflow: hidden;}
+
+#issuearchive .issues {
+	width: 188px;
+	height: 240px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 3px;}
+	
+.issues ul {
+	position: absolute;
+	top: 3px;
+	left: 3px;}
+	
+#issuearchive .issues li {
+	float: left;
+	line-height: 0%;
+	display: inline;
+	position: relative;}
+	
+#issuearchive .issues li a img {
+	line-height:0;
+margin:-3px;
+padding:6px;}
+	
+#issuearchive .issues li a:hover img, #issuearchive .issues li .selected  {
+	background-color: #fff799;}
+	
+#issuetoc {
+	clear: left;
+	overflow: auto;}
+#issuetoc .container{
+position: static;}	
+	
+
+#issuetoc .content {
+	padding-top: 32px;
+	position: static;}
+	
+#issuetoc #preload{ 
+	position: absolute;
+	background: #ffffff url(http://latimesblogs.latimes.com/latm/images/preload.gif) no-repeat center 50px;
+	z-index: 50;
+	width: 372px;
+	text-indent: -999em;
+	min-height: 1500px;}
+	
+#issuetoc .loading{
+	}
+	
+#issues a.image-link, #related a.image-link {
+display:block;
+float:left;
+height:82px;
+margin-right:14px;
+overflow:hidden;
+width:64px;}
+
+#related a.image-link {
+margin-right: 0;
+}
+
+#issues a img {
+height:82px;}	
+
+#issues li img{
+height:72px;}	
+
+.clear{
+	clear: both;}
+	
+#issues .right {
+	float: right;}
+	
+#issues .left {
+	float: left;}
+	
+#issues .previous {
+	padding-left: 4px;}
+	
+#issues .next {
+	padding-right: 6px;}
+
+#issues #showissue .container {
+	width: 174px;
+	height: 228px;
+}
+
+#issues #showissue .container img {
+	width: 174px;
+}
+
+#issuetitle {
+	width: 132px;}
+
+#issues .cptn {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: transparent url(http://latimesblogs.latimes.com/latm/images/50black.png) repeat top left;
+	margin: 3px;
+	padding: 3px;
+	width: 48px;
+	height: 66px;}
+	
+#issues .cptn p {
+	font-size: 10px;
+	line-height: 13px;
+	padding-top: 20px; 
+	color: #ffffff;
+	text-align: center ;}
+
+#issues .content .post {
+	padding: 0 6px 25px 25px;}
+	
+#issues .post-content {
+	margin-left: 78px;
+margin-right:18px;}
+	
+#issues .post-content h3{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;}
+
+/* Style for 50 Birds Text */
+#article #entry-6a00d8341c630a53ef0115714002d0970c p{
+	margin-top: 20px;
+	font-family: Arial, Helvetica, sans-serif;}
+	
+#contributors .entry, #editorial .entry, #about_us .entry, #publishing .entry {
+	border:1px solid #000000;
+	margin-left:0;
+	padding:7px 21px 0 7px;
+	width:360px;
+	min-height: 492px;
+}
+
+#contributors h1, #editorial h1, #about_us h1, #publishing h1 {
+	color:#D71920;
+	font-size:48px;
+	padding-bottom:17px;
+}
+
+#contributors #tocmenu.promo p.tocSection, #editorial #tocmenu.promo p.tocSection, #about_us #tocmenu.promo p.tocSection, #publishing #tocmenu.promo p.tocSection {
+	margin:10px;
+	padding:40px 0 43px;
+font-size: 100%;
+
+}
+
+#contributors #tocmenu.promo p.tocSection.contributors, #editorial #tocmenu.promo p.tocSection.editorial, #about_us #tocmenu.promo p.tocSection.about-us, #publishing #tocmenu.promo p.tocSection.publishing{
+background: #FFFF99;
+}
+
+
+.cat-50 #related,
+.cat-overheard #related,
+.cat-photos #related,
+.cat-pictorials #related, .entry-6a00d8341c630a53ef0120a63f3262970b #related {
+display: none;
+}
+
+
+/*RELATED*/
+#related {
+border:1px solid;
+padding:14px 14px 0 14px;
+width:305px;
+margin: 14px 0;
+_margin: 7px 0px;
+_position: relative;
+_bottom: -40px;
+_left: -7px;
+display:none;
+}
+
+#related h4 {
+	font-size: 40px;
+	line-height: 36px;
+	font-family: times, georgia, serif;
+	display: block;
+	color: #d71920;
+	margin: -3px 0 8px 0;
+cursor: pointer;
+}
+
+#related h5 {
+	font-size: 14px;
+}
+
+#related a.image-link {
+	height: 82px;
+	width: 64px;
+	overflow: hidden;
+	display: block;
+	float: left;
+	padding-bottom: 12px;
+	margin-top:3px;
+}
+
+#related .post-content {
+margin-left: 75px;
+}
+
+#related a img {
+	height: 82px;
+}
+
+#related h5 a:hover, #related a.header:hover {
+  color: #d71920;
+}
+
+#related ul li{
+	clear: both;
+	padding: 0 0 14px 0;
+	min-height: 82px
+}
+
+#related div {
+display: none;
+}
+
+#related div div {
+display: block;
+}
+
+a#link {
+position:absolute;
+right:368px;
+top:545px;
+color: #d71920;
+}
+
+h1 small {
+	display: block;
+}
+
+.california-cure {
+	border-top: 1px solid black;
+	background:transparent url(http://latimesblogs.latimes.com/latm/images/video/video_rule.gif) repeat-y scroll left center;
+	padding: 7px 0 0 0;
+	margin: 14px 0 0 0;
+}
+
+.california-cure-list-inc {
+	float: left;
+	padding-top: 5px;
+}
+
+.california-cure .right {
+	margin-left: 215px;
+}
+
+.california-cure p {
+	margin: 6px 0;
+}
+
+.california-cure h3 {
+	margin-top: 21px;
+}
+
+#backstory {
+	width: 570px;
+	height: 179px;
+	padding: 14px;
+	border: 1px solid black;
+}
+
+#blogs #section img {
+border-bottom:1px solid black;
+margin-bottom:7px;
+padding-bottom:7px;
+height:auto;
+}
+
+#blogs #section .last {
+display: block;
+height: 84px;
+overflow:hidden;
+}
+
+#blogs #section .last img {
+margin: 0;
+padding: 0;
+border: none;
+}
+
+
+/* Changes to Feature Story Presentation 2/2010 */
+
+.cat-feature_story #body {
+border:1px solid black;
+font-family:georgia,times,"time new roman",serif;
+font-size:93%;
+line-height:18px;
+margin:0;
+padding:400px 0 0 85px;
+}
+
+.head-image.top-left {
+border:none;
+left:22px;
+padding:7px 7px 3px;
+position:absolute;
+top:28px;
+width:auto;
+}
+
+.head-image.top-inline {
+border:none;
+}
+
+.cat-feature_story #body p, .cat-pictorials #body p {
+margin-right:25px;
+}
+
+#article .cat-pictorials #body {
+margin:520px 0 0;
+padding:7px 7px 7px 85px;
+width: 496px;
+border:1px solid black;
+}
+
+a#link {
+color:#D71920;
+position:absolute;
+right:380px;
+top:554px;
+}
+
+
+/* 50 Kisses Poll */
+
+#poll.p50kisses {
+background: url(http://latimesblogs.latimes.com/latm/50/50-kisses/votenow.png) no-repeat top left;
+border:1px solid black;
+margin-top:24px;
+padding:20px;
+text-align:right;
+width:547px;
+}
+
+
+.videolink {
+color:#D71920;
+float:right;
+font-family:arial,helvetica,sans-serif;
+font-size:10px;
+font-weight:bold;
+text-decoration:none !important;
+text-transform:uppercase;
+letter-spacing:0.2em;
+}
+/* ph=1 */
+/* nhm:from_kauri */

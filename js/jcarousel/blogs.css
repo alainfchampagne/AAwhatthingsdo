@@ -1,0 +1,94 @@
+#section.blogcarousel {
+	height: 484px !important;
+	width: 374px !important;
+}
+
+.jcarousel-skin-blogs .jcarousel-clip {
+	display: block !important;
+	width: 374px  !important;
+}
+
+.jcarousel-skin-blogs #section .jcarousel-item {
+	height:85px  !important;
+	width:374px  !important;
+	padding: 0 0 7px 0;
+	margin: 0 0 7px 0;
+	border-bottom: 1px solid black;
+	_padding-bottom: 6px;
+}
+
+.jcarousel-skin-blogs #section .jcarousel-item.last {
+	height:84px  !important;
+	width:374px  !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	border-bottom: none !important;
+}
+
+.jcarousel-skin-blogs #section .jcarousel-item img {
+	padding: 0 !important;
+	margin: 0  !important;
+	border-bottom: none !important;
+	border-bottom-width: 0 !important;
+	height: 85px !important;
+}
+
+.jcarousel-skin-blogs .jcarousel-list {
+	width: 374px;
+	padding: 0 !important;
+}
+
+.jcarousel-skin-blogs .jcarousel-container-vertical {
+	width: 374px;
+	height: 484px;
+	padding: 7px;
+}
+
+.jcarousel-skin-blogs .jcarousel-clip-vertical {
+	width: 374px;
+	height: 484px;
+}
+
+.jcarousel-skin-blogs .jcarousel-item-vertical {
+	margin-bottom:10px;
+}
+
+.jcarousel-skin-blogs .jcarousel-next-vertical {
+
+background:transparent url(http://latimesblogs.latimes.com/latm/jcarousel/next-vertical.png) no-repeat scroll 0 0;
+top:492px;
+cursor:pointer;
+height:32px;
+right:-7px;
+position:absolute;
+width:32px !important;
+}
+.jcarousel-skin-blogs .jcarousel-next-vertical:hover {
+background-position:0 -32px;
+}
+.jcarousel-skin-blogs .jcarousel-next-vertical:active {
+background-position:2px -65px;
+}
+.jcarousel-skin-blogs .jcarousel-next-disabled-vertical, .jcarousel-skin-blogs .jcarousel-next-disabled-vertical:hover, .jcarousel-skin-blogs .jcarousel-next-disabled-vertical:active {
+background-position:0 -96px;
+cursor:default;
+}
+.jcarousel-skin-blogs .jcarousel-prev-vertical {
+background:transparent url(http://latimesblogs.latimes.com/latm/jcarousel/prev-vertical.png) no-repeat scroll 0 0;
+cursor:pointer;
+height:32px;
+left:-7px;
+position:absolute;
+top:492px;
+width:32px !important;
+}
+.jcarousel-skin-blogs .jcarousel-prev-vertical:hover {
+background-position:0 -32px;
+}
+.jcarousel-skin-blogs .jcarousel-prev-vertical:active {
+background-position:-2px -65px;
+}
+.jcarousel-skin-blogs .jcarousel-prev-disabled-vertical, .jcarousel-skin-blogs .jcarousel-prev-disabled-vertical:hover, .jcarousel-skin-blogs .jcarousel-prev-disabled-vertical:active {
+background-position:0 -96px;
+cursor:default;
+}

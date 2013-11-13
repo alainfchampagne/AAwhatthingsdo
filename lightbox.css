@@ -1,0 +1,31 @@
+html, body {
+	height: 100%;
+}
+
+#lightboxwall {
+	height: 100%;
+	width: 100%;
+	background: transparent url(http://latimesblogs.latimes.com/latm/video/lightbox.png) repeat top left;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 100;
+	opacity: 0;}
+
+* html div#lightboxwall {
+	position: absolute;
+	height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+
+#lightbox {
+	position: relative;
+	margin: 15% auto 0px;
+	width: 480px;
+	height: 400px;
+	overflow: visible;}
+
+a#removelightbox {
+	display: block;
+	text-align:right;
+}/* ph=1 */
+/* nhm:from_kauri */

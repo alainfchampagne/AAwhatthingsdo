@@ -1,0 +1,1234 @@
+/*
+Theme Name: What things do
+Theme URI: http://whatthingsdo.com
+Description: The theme for whatthingsdo.com
+Author: Jordan Crane
+Author URI: http://reddingk.com/
+Tags: black, custom header, fixed width, one column
+
+	whatthingsdo v1.0
+/*
+Theme Name: What things do
+Theme URI: http://whatthingsdo.com
+Description: The theme for whatthingsdo.com
+Author: Jordan Crane
+Author URI: http://reddingk.com/
+Tags: black, custom header, fixed width, one column
+
+	whatthingsdo v1.0
+
+*/
+
+/* border: 1px solid red; */
+
+
+.comicsbox{
+  position:relative;
+	width: 480px;
+	height: auto;
+	border: 0px solid purple;
+	}
+	
+.storebox{
+  position:relative;
+	float:right;
+	width: 480px;
+	height: auto;
+	border-left: 1px solid #b7b4a2;
+	}
+	
+
+.halfsizebox{
+	width: 450px;
+	height: auto;
+	margin-left: 15px;
+	border: 0px solid blue;
+}
+
+#Cyellowtint{
+  position:relative;
+  float: right;
+  background-color: #fff000;
+  width:450px;
+  height:450px;
+  margin-bottom: 10px;
+  z-index: 5;
+  border: 0px solid red;
+}
+
+
+
+
+.Cclipout{
+  position:relative;
+  float: right;
+  width:450px;
+  height:450px;
+  z-index: -1;
+    border: 0px solid blue;
+}
+.Cclipin{
+  position:absolute;
+  float: right;
+  clip:rect(150px 500px 600px 50px);
+  margin-top: -150px;
+  margin-left: -50px;
+  filter:alpha(opacity=85);
+  opacity: 0.85;
+
+}
+
+
+
+
+#prodtitleF	{
+		font: 1.8em Arial, sans-serif;
+		color: #ccc9b5;
+		font-weight: bold;
+        letter-spacing: 0.05em;
+	position: relative;
+	float: right;
+	width: 365px;
+	margin-top: 0px;
+	padding-right: 50px;
+    border:0px solid red;
+    
+    
+    
+	-webkit-transform: rotate(-1.2deg);	
+	-moz-transform: rotate(-1.2deg);
+	-ms-transform: rotate(-1.2deg);
+	-o-transform: rotate(-1.2deg);
+	transform: rotate(-1.2deg);
+	
+	
+    }
+  
+  #prodauthorF	{
+	
+	font: 1em Arial, sans-serif;
+	color: #5c563d;
+		font-weight: bold;
+    line-height: 1.5em;
+	letter-spacing: .05em;
+	
+	position: relative;
+	float: right;
+	
+	
+	width: 261px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	padding-right: 50px;
+    border:0px solid red;
+    
+	-webkit-transform: rotate(0.5deg);	
+	-moz-transform: rotate(0.5deg);
+	-ms-transform: rotate(0.5deg);
+	-o-transform: rotate(0.5deg);
+	transform: rotate(0.5deg);
+    }
+    
+      
+#prodtextF	{
+
+	font: .8em Arial, sans-serif;
+	color: #5c563d;
+    line-height: 1.5em;
+	letter-spacing: .04em;
+
+
+
+	
+	position: relative;
+	float: right;
+	
+	
+	display: block;
+	width: 420px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	padding-right: 15px;
+    border:0px solid red;
+    
+	-webkit-transform: rotate(1.2deg);	
+	-moz-transform: rotate(1.2deg);
+	-ms-transform: rotate(1.2deg);
+	-o-transform: rotate(1.2deg);
+	transform: rotate(1.2deg);
+    }
+    
+    #prodbuttonF	{
+		
+	
+	position: relative;
+	float: right;
+	
+	width: 100px;
+	height: 68px;
+	margin-top: -90px;
+	margin-bottom: 0px;
+	margin-right: 220px;
+    border:0px solid red;
+ }   
+	
+	
+#prodpriceF	{
+	font: 1em Arial, sans-serif;
+	color: #5c563d;
+	font-weight: bold;
+    letter-spacing: 0.05em;
+	text-transform: uppercase;
+	
+	
+	
+	position: relative;
+	float: right;
+	
+	width: 280px;
+	margin-top: 15px;
+	margin-bottom: 0px;
+	padding-right: 50px;
+    border: 0px solid red;
+    
+	-webkit-transform: rotate(1.2deg);	
+	-moz-transform: rotate(1.2deg);
+	-ms-transform: rotate(1.2deg);
+	-o-transform: rotate(1.2deg);
+	transform: rotate(1.2deg);
+ }  
+    
+    
+
+/* News */
+
+
+.tumblr-post { width: 450px; padding: 5px 0px 0px 0px; float: left; margin-left: 15px; margin-right: 0px;}
+.tumblr-post img, object, embed { max-width: 450px; min-width: 450px;}
+.tumblr-post h3 { font-family: Helvetica, Arial, sans-serif; font-size: 15px; font-weight: bold;}
+.tumblr-post p { padding: 0px 0; margin:0;}
+
+
+
+#newstitlehome {
+		font: .9em Arial, sans-serif;
+		color: #333;
+        letter-spacing: 0.08em;     
+        line-height: 1.25em;
+		font-weight: bold;
+		text-transform: uppercase;
+   		padding-bottom: 5px;
+		display: inline;
+		position: relative;
+     	margin-top: 0px;
+}
+
+
+#newsdatehome {
+		font: .9em Arial, sans-serif;
+		color: #ccc9b5;
+        letter-spacing: 0.1em;     
+        line-height: 1.3em;
+		font-weight: bold;
+		text-transform: uppercase;
+   		padding-bottom: 0px;
+		display: inline;
+		position: relative;
+     	margin-top: 0px;
+
+}
+
+#newsauthorhome {
+	font: 0.7em Georgia, "Times New Roman", Times, serif;
+    color: #ccc9b5;
+	letter-spacing: 0.1em;
+		display: block;
+		position: relative;
+     	margin-top: 0px;
+     	margin-bottom: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
+    
+}
+
+#newstexthome {
+	font: 0.8em Georgia, "Times New Roman", Times, serif;
+    color: #6d6b61;
+	letter-spacing: 0.08em;
+		display: block;
+		position: relative;
+     	margin-top: -10px;
+     	margin-bottom: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
+    
+}
+
+
+
+
+
+
+
+
+
+/* BEGIN Featured Content Slider */
+
+#featured{ 
+	width:595px; 
+	padding: 0px; 
+	position:relative; 
+	border-right: 1px solid #b7b4a2; 	
+	height:669px; 
+	background:fffbc3;
+	z-index: 7;
+}
+
+#featuredtitles{ 
+	width:230px; 
+	padding-right:0px; 
+	position:relative; 
+	border:1px solid #b7b4a2; 	
+	height:auto; 
+	background: #fffde6;
+	margin: -1px 0px 0px 0px;	
+	z-index: 7;
+}
+
+
+#featured ul.ui-tabs-nav{ 
+	position:absolute; 
+	top: 0px; right: 1px; 
+	list-style:none; 
+	padding:0px; margin:0px; 
+	width:230px; 
+	z-index: 7;
+}
+#featured ul.ui-tabs-nav li{ 
+	padding:1px 0px 0px 13px;  
+	
+	z-index: 7;
+}
+#featured ul.ui-tabs-nav li img{ 
+	float:left; margin:2px 5px; 
+	background:#fff; 
+	padding:2px; 
+	border:0px solid #eee;
+	z-index: 7;
+}
+#featured ul.ui-tabs-nav li span{ 
+	
+	line-height:18px; 
+	z-index: 7;
+}
+#featured li.ui-tabs-nav-item a{ 
+	display:block; 
+	height:auto;   background: #fffde6; padding:15px 10px 15px 10px;
+	line-height:20px; margin:0px 10px 0px 0px;
+	z-index: 7;
+}
+#featured li.ui-tabs-nav-item a:hover{ 
+	background:#fffde6; 
+	z-index: 7;
+}
+#featured li.ui-tabs-selected{ 
+	background: #fffde6; 
+	z-index: 7;
+}
+#featured ul.ui-tabs-nav li.ui-tabs-selected a{ 
+	background:#fffbc3; 
+}
+#featured .ui-tabs-panel{ 
+	width:400px; height:250px; 
+	background:#999; position:relative;
+}
+#featured .ui-tabs-panel .info{ 
+	position:absolute; 
+	top:180px; left:0; 
+	height:70px; 
+	background: #fffde6; 
+}
+#featured .info h2{ 
+	 font-family:Georgia, serif; 
+	color:#fff; padding:5px; margin:0;
+	overflow:hidden; 
+}
+#featured .info p{ 
+	margin:0 5px; 
+	font-family:Verdana; font-size:11px; 
+	line-height:15px; color:#f0f0f0;
+}
+#featured .info a{ 
+	text-decoration:none; 
+	color:fffde6; 
+}
+#featured .info a:hover{ 
+	text-decoration:underline; 
+}
+#featured .ui-tabs-hide{ 
+	display:none; 
+}
+
+
+
+
+#homekeyline {
+
+	height: 1px; 
+	width: 450px; 
+	background-color: #b7b4a2; 
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-left: auto;
+    margin-right: auto; 
+
+
+}
+
+#nokeyline {
+
+	height: 1px; 
+	width: 150px; 
+	background-color: #fffde6;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	margin-left: auto;
+    margin-right: auto; 
+
+
+}
+
+
+/* END Featured Content Slider */
+
+
+
+#newwork {
+	background-image: url(images/newwork.png);
+	display: block;
+	position: absolute; top: -25px; left: -62px;
+	height: 178px;
+	width: 247px;
+	margin: 0px;	
+	border: none;
+	z-index: 1000;
+	}
+
+#hometop {
+	background-image: url(images/headerhome3.gif);
+	display: block;
+	height: 134px;
+	width: 960px;
+	margin: 0px;	
+	border: none;
+	}
+	
+#homemid {
+	display: block;
+	min-height: 100%;
+	height: auto !important;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	width: 960px;
+	margin-top: 10px;
+	border: none;
+	}
+
+
+#homerssmobile {
+    font: 0.53em  Georgia, "Times New Roman", Times, serif;
+	letter-spacing: 0.3em;
+    color: #6d6b61;
+	margin: 0px;
+    position: absolute; top: 55px; left: 840px;
+    text-decoration: none;
+     border: none;
+}
+
+
+
+
+
+#dayhome {
+		font: 2.5em Arial, sans-serif;
+		font-weight: bolder;
+        letter-spacing: 0.05em;  
+		text-transform: uppercase; 
+		display: block;
+		position: relative;
+     	margin-top: -4px;
+     	margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        color: #ccc9b5;
+}
+
+#headlinehome {
+		font: 1.8em Arial, sans-serif;
+		font-weight: bold;
+        letter-spacing: 0.05em;
+		text-transform: uppercase;
+		display: inline;
+		position: relative;
+     	margin-top: 10px;
+     	margin-bottom: 8px;
+        margin-left: 20px;
+        margin-right: 20px;
+        float:left;
+        color: #ccc9b5;
+}
+
+       
+#headlinehome a {
+        color: #ccc9b5;
+        text-decoration: none;
+        }
+        
+#headlinehome a:hover{
+        color: #ff028b;
+}
+
+#headlinehome a:visited {
+        color: #ccc9b5;
+        text-decoration: none;
+}
+
+#comictitlehome {
+		font: 1.7em Arial, sans-serif;
+        letter-spacing: 0.05em;     
+        line-height: 1em;
+		font-weight: bold;
+		/* text-transform: uppercase; */
+   		margin-bottom: 100px;
+		display: inline;
+		position: relative;
+     	padding-top: 12px;
+}
+
+
+#comictitlehomexx {
+		font: .1em Arial, sans-serif;
+		color: #fffbc3;
+        letter-spacing: 0em;     
+        line-height: 0em;
+		font-weight: bold;
+		/* text-transform: uppercase; */
+   		padding-bottom: 0px;
+		display: inline;
+		position: relative;
+     	margin-top: 0px;
+}
+
+
+
+
+#comictitlehome a{
+        color: #F00;
+}
+
+#comictitlehome a:visited{
+        color: #F00;
+}
+
+#comictitlehome a:hover{
+        color: #ff028b;
+}
+
+#bump {
+		font-size:0;
+		height:9px;
+}
+
+#titleparthome {
+	font: 0.7em Georgia, "Times New Roman", Times, serif;
+	margin-top: 0px;
+    color: #6d6b61;
+	letter-spacing: 0.15em;
+    margin-left: 0px;
+}
+
+#titleauthorhome {
+	font: 1.2em Garamond, Georgia, "Times New Roman", Times, serif;
+    color: #6d6b61;
+	letter-spacing: 0.11em;
+    margin-left: 0px;
+}
+
+#titledatehome {
+	font: 0.7em Georgia, "Times New Roman", Times, serif;
+    color: #6d6b61;
+	letter-spacing: 0.15em;
+		display: block;
+		position: relative;
+     	margin-top: 0px;
+     	margin-bottom: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
+    
+}
+
+.readbutton { 
+	display: inline;
+	float: left;
+	position: relative; top: 17px; left: 0px; margin-bottom:5px;
+	border: none;
+}
+
+
+
+/* This is the top comic thumbnail */
+
+#bigyellowtint{
+  position:relative;
+  float: left;
+  background-color: #fff000;
+  width:595px;
+  height:669px;
+  left: 0px;
+  top: 0px;
+  border: 0px solid none;
+}
+
+#bigyellowtint a{
+  background-color: #000000;
+}
+
+.bigyellowtint a:hover{
+  background-color: #ffcc00;
+}
+
+
+.bigclipout{
+  position:relative;
+  float: left;
+  width:595px;
+  height:669px;
+    border: 0px solid none;
+}
+.bigclipin{
+  position:absolute;
+  float: left;
+  clip:rect(100px 677px 769px 82px);
+  margin-top: -100px;
+  margin-left: -82px;
+  filter:alpha(opacity=85);
+  opacity: 0.85;
+
+}
+
+.bigclipin a:hover{
+  position:absolute;
+  float: left;
+  clip:rect(100px 677px 769px 82px);
+
+  filter:alpha(opacity=80);
+  opacity: 0.80;
+
+}
+
+
+#smtext {
+position: relative;
+ margin-left: 20px;
+ margin-right: 20px;
+ 
+ margin-top: -5px;
+ border: 0px solid red;
+ }
+ 
+#smcomichome {
+		font: 1.0em Arial, sans-serif;
+        letter-spacing: 0.06em;     
+        line-height: 1.4em;
+		font-weight: bold;
+        text-indent: 20px;
+}
+
+#smcomichome a { 
+        color: #F00;
+        text-decoration: none;
+}
+
+#smcomichome a:hover {
+        color: #ff028b;
+        text-decoration: none;
+}
+
+
+#smtitleparthome {
+	font: 0.65em Georgia, "Times New Roman", Times, serif;
+	margin-top: 10px; 
+    line-height: 1.4em;
+    color: #6d6b61;
+	letter-spacing: 0.09em;
+    margin-left: 0px;
+}
+
+#smtitleauthorhome {
+	font: 0.9em  Garamond, Georgia, "Times New Roman", Times, serif;
+    color: #6d6b61;
+	letter-spacing: 0.11em;
+    margin-left: 0px;
+}
+
+#smtitledatehome {
+	font: 0.7em Georgia, "Times New Roman", Times, serif;
+    color: #6d6b61;
+	letter-spacing: 0.15em;
+    margin-left: 0px;
+    
+}
+
+.smreadbutton { 
+	display: inline;
+	position: relative; bottom:5px; left: 125px; top:-15px;
+	border: none;
+}
+
+
+/* This is the small comic thumbnail */
+
+.panelsbox{
+  position:relative;
+	float:right;
+	width: 450px;
+	height: auto;
+	border: 0px solid red;
+}
+
+.smalllowerbox{
+	float:right;
+	width: 450px;
+	height: auto;
+	margin-left: 17px;
+	margin-right: 0px; 
+	margin-bottom: 7px;
+	border: 0px solid blue;
+
+
+}
+
+#smyellowtint{
+  position:relative;
+  float: right;
+  background-color: #fff000;
+  width:450px;
+  height:175px;
+  margin-bottom: 10px;
+  z-index: 5;
+  border: 0px solid red;
+}
+
+
+
+
+.smclipout{
+  position:relative;
+  float: right;
+  width:450px;
+  height:175px;
+  z-index: -1;
+    border: 0px solid blue;
+}
+.smclipin{
+  position:absolute;
+  float: right;
+  clip:rect(200px 434px 375px 82px);
+  margin-top: -200px;
+  margin-left: -82px;
+  filter:alpha(opacity=85);
+  opacity: 0.85;
+
+}
+
+.smclipin a:hover{
+  position:absolute;
+  float: right;
+  clip:rect(200px 434px 375px 82px);
+ 
+  filter:alpha(opacity=80);
+  opacity: 0.80;
+
+}
+
+
+
+#authorphoto {
+	width: 366px;
+	display:block;
+	float: left;
+	margin-left: 0px;
+	margin-right: 20px;
+	margin-bottom: 0px;
+ 	border: none;
+
+}
+
+#authorname {
+		font: 1.8em Arial, sans-serif;
+        letter-spacing: 0.06em;     
+        line-height: 1em;
+		font-weight: bold;
+		text-transform: uppercase;
+		position: relative;
+		margin-bottom: 8px; 
+		margin-top: 15px; 
+        margin-left: 20px;
+        margin-right: 20px;
+        color: #F00;
+}
+
+#authorname a:hover{
+        color: #f00;
+}
+
+#authorname a:hover{
+        color: #ff028b;
+}
+
+#authorname a:visited{
+        color: #F00;
+}
+
+#authortitle {
+		font: 0.8em Arial, sans-serif;
+		font-weight: bolder;
+		text-transform: uppercase;
+		position: relative;
+		margin-bottom: 10px; 
+        letter-spacing: 0.04em;
+        margin-left: 20px;
+        margin-right: 20px;        
+        line-height: 2em;
+        color: #000;
+}
+
+
+#authorquote {
+		font: 1.8em Arial, sans-serif;
+		font-weight: bold;
+        letter-spacing: 0.08em;
+		position: relative;
+		bottom: 0px; 
+        margin-left: 20px;
+        margin-right: 20px;
+        color: #ccc9b5;
+}
+
+
+#authorheaders {
+		font: 1.8em Arial, sans-serif;
+		font-weight: bold;
+        letter-spacing: 0.1em;
+		text-transform: uppercase;
+		display: inline;
+		position: relative;
+     	margin-top: 8px;
+     	margin-bottom: 4px;
+        margin-left: 20px;
+        margin-right: 20px;
+        color: #ccc9b5;
+}
+
+#authorheaders a { 
+        color: #ccc9b5;
+        text-decoration: none;
+}
+
+#authorheaders a:hover {
+        color: #ff028b;
+        text-decoration: none;
+}
+
+
+#authorlinkline {
+        display: block;
+		position: relative;
+     	margin-top: 0px;
+     	margin-bottom: 13px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+
+}
+
+
+
+
+#authorlinklower {
+		font: 0.8em Arial, sans-serif;
+		font-weight: bold;
+        letter-spacing: 0.06em;
+        margin-left: 0px;
+        margin-right: 0px;
+        color: #6d6b61;
+}
+
+#authorlinksub {
+		font: 0.7em Georgia, "Times New Roman", Times, serif;
+        margin-left: 0px;
+        margin-right: 0px;
+        color: #6d6b61;
+		letter-spacing: 0.15em;
+}
+
+
+
+
+
+
+
+
+
+/* This is for TOP NAVIGATION */
+
+
+#stacks_columns {
+	-webkit-column-count: 3;	/* Safari and Chrome */
+	-moz-column-count: 3; 		/* Firefox */	
+	column-count: 3; 
+
+	-webkit-column-gap: 20px;	/* Safari and Chrome */
+	-moz-column-gap: 20px; 		/* Firefox */
+	column-gap: 20px; 
+	
+	
+
+
+   	padding: 0px 20px 0px 20px;   
+   	margin-bottom: 30px; 
+    text-justify: newspaper;
+    border: 0px solid red;
+} 
+
+#stacks_authors {
+		font: 1.5em Arial, sans-serif;
+		font-weight: bold;
+        letter-spacing: 0.06em;
+		text-transform: uppercase;
+     	margin-top: 8px;
+     	margin-bottom: 20px;
+        margin-left: 0px;
+        margin-right: 20px;
+}
+
+
+#NAVstripes {
+	background-image: url(images/TOPstripes3.gif);
+	display: block;
+	height: 29px;
+	width: 960px;
+	margin: 0px;	
+	border: none;
+	z-index: 50;
+	position: inherit;
+	}
+/* This is for TOP NAVIGATION */
+
+
+
+
+/* This is for STACKS DROPDOWN sliding panel */
+	
+#STACKStoppanel {
+	
+	position: absolute;   /*if FIXED Panel will overlap  content */
+	/*position: relative;*/   /*Panel will "push" the content down */
+	padding-top: 12px;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 100%; 
+	height: 1px;
+	}
+	
+#STACKSpanel {
+	width: 100%;
+	height: auto;
+	font-size: 100%;
+	font: Georgia, "Times New Roman", Times, serif;
+    letter-spacing: 0.02em;
+	color: #999999;
+	background: #fff;
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+	display: none;
+}
+
+
+#STACKSpanel .STACKScontent {
+	width: 960px;
+	margin: 5px 5px;
+	padding-top: 15px;
+	text-align: left;
+	font-size: 0.85em;
+	color: #5a583d;
+	}
+#STACKSpanel .STACKScontent .STACKSleft {
+	width: 268px;
+	float: left;
+	margin-bottom: 25px;
+	padding: 0px 15px;
+	border-right: 1px solid #8b8664;
+	min-height: 220px;
+}
+
+
+/* THE STACKS  Panel Tab/button */
+
+.tabSTACKS {
+  	background: url(images/tab_b5.png) repeat-x 0 0;
+	height: 1px;
+	position: relative;
+	z-index: 10;
+}
+.tabSTACKS ul.STACKSlogin {
+	display: block;
+	position: relative;
+  	float: right;
+  	clear: right;
+  	height: 42px;
+	width: auto;
+	line-height: 42px;
+	margin: 0;
+	right: 578px;
+  	color: white;
+  	font-size: 100%;
+	text-align: center;
+}
+.tabSTACKS ul.STACKSlogin li.STACKSleft {
+  	background: url(images/tab_l5.png) no-repeat left 0;
+  	height: 42px;
+	width: 17px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: left;
+}
+.tabSTACKS ul.STACKSlogin li.STACKSright {
+  	background: url(images/tab_r5.png) no-repeat left 0;
+  	height: 42px;
+	width: 17px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: left;
+}
+.tabSTACKS ul.STACKSlogin li {
+ 	text-align: left;
+  	padding: 0 0px;
+	display: block;
+	float: left;
+	height: 42px;
+  	background: url(images/tab_m5.png) repeat-x 0 0;
+}
+.tabSTACKS ul.STACKSlogin li a {
+
+	font: 0.55em Georgia, "Times New Roman", Times, serif;
+	letter-spacing: 0.2em;
+	top: -1px;
+	color: #8f7d3b;
+}
+.tabSTACKS ul.STACKSlogin li a:hover {
+	color: #ff0000;
+}
+.tabSTACKS .sep {color:#414141}
+.tabSTACKS a.STACKSopen{
+	height: 20px;
+	line-height: 20px !important;
+	padding-left: 15px !important;
+	cursor: pointer;
+	display: block;
+	width: 90px;
+	position: relative;
+	top: 0px;
+}
+.tabSTACKS a.STACKSclose {
+	height: 20px;
+	line-height: 20px !important;
+	padding-left: 15px !important;
+	cursor: pointer;
+	display: block;
+	width: 90px;
+	position: relative;
+	padding-top: 1px;
+}
+.tabSTACKS a.STACKSopen {background: url(images/bt_open.png) no-repeat left 1px;}
+.tabSTACKS a.STACKSclose {background: url(images/bt_close.png) no-repeat left 1px;}
+.tabSTACKS a:hover.STACKSopen {background: url(images/bt_open.png) no-repeat left -18px;}
+.tabSTACKS a:hover.STACKSclose {background: url(images/bt_close.png) no-repeat left -18px;}
+
+
+
+
+
+
+
+
+/* This is for STORE DROPDOWN sliding panel */
+	
+#STOREtoppanel {
+	
+	position: absolute;   /*if FIXED Panel will overlap  content */
+	/*position: relative;*/   /*Panel will "push" the content down */
+	padding-top: 4px;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 100%; 
+	height: 1px;
+	}
+	
+#STOREpanel {
+	width: 100%;
+	height: auto;
+	font-size: 100%;
+	font: Georgia, "Times New Roman", Times, serif;
+    letter-spacing: 0.02em;
+	color: #999999;
+	background: #fff;
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+	display: none;
+}
+
+
+#STOREpanel .STOREcontent {
+	width: 960px;
+	margin: 5px 5px;
+	padding-top: 15px;
+	text-align: left;
+	font-size: 0.85em;
+	color: #5a583d;
+	}
+#STOREpanel .STOREcontent .STOREleft {
+	width: 268px;
+	float: left;
+	margin-bottom: 25px;
+	padding: 0px 15px;
+	border-right: 1px solid #8b8664;
+	min-height: 220px;
+}
+
+
+/* THE STORE  Panel Tab/button */
+
+.tabSTORE {
+  	background: url(images/tab_b4a.png) repeat-x 0 0;
+	height: 1px;
+	position: relative;
+	z-index: 10;
+}
+.tabSTORE ul.STORElogin {
+	display: block;
+	position: relative;
+  	float: right;
+  	clear: right;
+  	height: 42px;
+	width: auto;
+	line-height: 42px;
+	margin: 0;
+	right: 415px;
+  	color: white;
+  	font-size: 100%;
+	text-align: center;
+}
+.tabSTORE ul.STORElogin li.STOREleft {
+  	background: url(images/tab_l4.png) no-repeat left 0;
+  	height: 42px;
+	width: 17px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: left;
+}
+.tabSTORE ul.STORElogin li.STOREright {
+  	background: url(images/tab_r4.png) no-repeat left 0;
+  	height: 42px;
+	width: 17px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: left;
+}
+.tabSTORE ul.STORElogin li {
+ 	text-align: left;
+  	padding: 0 0px;
+	display: block;
+	float: left;
+	height: 42px;
+  	background: url(images/tab_m4.png) repeat-x 0 0;
+}
+.tabSTORE ul.STORElogin li a {
+
+	font: 0.55em Georgia, "Times New Roman", Times, serif;
+	letter-spacing: 0.2em;
+	top: -1px;
+	color: #8f7d3b;
+}
+.tabSTORE ul.STORElogin li a:hover {
+	color: #ff0000;
+}
+.tabSTORE .sep {color:#414141}
+.tabSTORE a.STOREopen{
+	height: 20px;
+	line-height: 20px !important;
+	padding-left: 15px !important;
+	cursor: pointer;
+	display: block;
+	width: 90px;
+	position: relative;
+	top: 0px;
+}
+.tabSTORE a.STOREclose {
+	height: 20px;
+	line-height: 20px !important;
+	padding-left: 15px !important;
+	cursor: pointer;
+	display: block;
+	width: 90px;
+	position: relative;
+	padding-top: 1px;
+}
+.tabSTORE a.STOREopen {background: url(images/bt_open.png) no-repeat left 1px;}
+.tabSTORE a.STOREclose {background: url(images/bt_close.png) no-repeat left 1px;}
+.tabSTORE a:hover.STOREopen {background: url(images/bt_open.png) no-repeat left -18px;}
+.tabSTORE a:hover.STOREclose {background: url(images/bt_close.png) no-repeat left -18px;}
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+[if IE]>
+<style>
+
+
+
+</style>
+<![EndIf]
+
+-->
+
+
+
+
+
+
+
